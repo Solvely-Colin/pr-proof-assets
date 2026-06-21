@@ -24,10 +24,15 @@ Captured: 2026-06-21
 
 Green after rebase onto `origin/main`:
 
+- `logs/codex-review-base-origin-main.log`
 - `logs/rebased-git-diff-check.log`
 - `logs/rebased-gradle-ktlint-check.log`
 - `logs/rebased-gradle-shellscreen-test.log`
 - `logs/rebased-gradle-assemble-play-debug.log`
+
+`codex review --base origin/main` reported no actionable correctness issues. The review command's own
+default Android test probe was blocked by the shell's missing default Java runtime, so the Gradle proof above
+uses the explicit `JAVA_HOME` and Android SDK environment that works in this checkout.
 
 Captured known blocker:
 
