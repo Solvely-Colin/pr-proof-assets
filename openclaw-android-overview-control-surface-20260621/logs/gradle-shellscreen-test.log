@@ -1,0 +1,39 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:prePlayDebugBuild UP-TO-DATE
+> Task :app:generatePlayDebugBuildConfig UP-TO-DATE
+> Task :app:generatePlayDebugResources UP-TO-DATE
+> Task :app:packagePlayDebugResources UP-TO-DATE
+> Task :app:processPlayDebugNavigationResources UP-TO-DATE
+> Task :app:parsePlayDebugLocalResources UP-TO-DATE
+> Task :app:generatePlayDebugRFile UP-TO-DATE
+> Task :app:javaPreCompilePlayDebug UP-TO-DATE
+> Task :app:checkPlayDebugAarMetadata UP-TO-DATE
+> Task :app:mapPlayDebugSourceSetPaths UP-TO-DATE
+> Task :app:compilePlayDebugNavigationResources UP-TO-DATE
+> Task :app:mergePlayDebugResources UP-TO-DATE
+> Task :app:createPlayDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksPlayDebug UP-TO-DATE
+> Task :app:processPlayDebugMainManifest UP-TO-DATE
+> Task :app:processPlayDebugManifest UP-TO-DATE
+> Task :app:processPlayDebugManifestForPackage UP-TO-DATE
+> Task :app:processPlayDebugResources UP-TO-DATE
+> Task :app:prePlayDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompilePlayDebugUnitTest UP-TO-DATE
+> Task :app:generatePlayDebugAssets UP-TO-DATE
+> Task :app:mergePlayDebugAssets UP-TO-DATE
+> Task :app:packagePlayDebugUnitTestForUnitTest UP-TO-DATE
+> Task :app:processPlayDebugUnitTestManifest UP-TO-DATE
+> Task :app:generatePlayDebugUnitTestConfig UP-TO-DATE
+> Task :app:compilePlayDebugKotlin
+> Task :app:compilePlayDebugJavaWithJavac UP-TO-DATE
+> Task :app:processPlayDebugJavaRes UP-TO-DATE
+> Task :app:bundlePlayDebugClassesToCompileJar
+> Task :app:bundlePlayDebugClassesToRuntimeJar
+> Task :app:compilePlayDebugUnitTestKotlin UP-TO-DATE
+> Task :app:compilePlayDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processPlayDebugUnitTestJavaRes UP-TO-DATE
+> Task :app:testPlayDebugUnitTest
+
+BUILD SUCCESSFUL in 3s
+30 actionable tasks: 4 executed, 26 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.5.1/userguide/configuration_cache_enabling.html

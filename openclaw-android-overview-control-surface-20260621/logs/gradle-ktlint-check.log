@@ -1,0 +1,64 @@
+> Task :app:loadKtlintReporters UP-TO-DATE
+> Task :app:runKtlintCheckOverAndroidTestDebugSourceSet NO-SOURCE
+> Task :app:ktlintAndroidTestDebugSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverAndroidTestPlayDebugSourceSet NO-SOURCE
+> Task :app:ktlintAndroidTestPlayDebugSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverAndroidTestPlaySourceSet NO-SOURCE
+> Task :app:ktlintAndroidTestPlaySourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverAndroidTestReleaseSourceSet NO-SOURCE
+> Task :app:ktlintAndroidTestReleaseSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverAndroidTestSourceSet NO-SOURCE
+> Task :app:ktlintAndroidTestSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverAndroidTestThirdPartyDebugSourceSet NO-SOURCE
+> Task :app:ktlintAndroidTestThirdPartyDebugSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverAndroidTestThirdPartySourceSet NO-SOURCE
+> Task :app:ktlintAndroidTestThirdPartySourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverDebugSourceSet UP-TO-DATE
+> Task :app:ktlintDebugSourceSetCheck UP-TO-DATE
+> Task :app:runKtlintCheckOverKotlinScripts UP-TO-DATE
+> Task :app:ktlintKotlinScriptCheck UP-TO-DATE
+> Task :app:runKtlintCheckOverPlayDebugSourceSet NO-SOURCE
+> Task :app:ktlintPlayDebugSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverPlayReleaseSourceSet NO-SOURCE
+> Task :app:ktlintPlayReleaseSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverPlaySourceSet UP-TO-DATE
+> Task :app:ktlintPlaySourceSetCheck UP-TO-DATE
+> Task :app:runKtlintCheckOverReleaseSourceSet NO-SOURCE
+> Task :app:ktlintReleaseSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverTestDebugSourceSet NO-SOURCE
+> Task :app:ktlintTestDebugSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverTestFixturesDebugSourceSet NO-SOURCE
+> Task :app:ktlintTestFixturesDebugSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverTestFixturesPlaySourceSet NO-SOURCE
+> Task :app:ktlintTestFixturesPlaySourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverTestFixturesReleaseSourceSet NO-SOURCE
+> Task :app:ktlintTestFixturesReleaseSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverTestFixturesSourceSet NO-SOURCE
+> Task :app:ktlintTestFixturesSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverTestFixturesThirdPartySourceSet NO-SOURCE
+> Task :app:ktlintTestFixturesThirdPartySourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverTestPlayDebugSourceSet NO-SOURCE
+> Task :app:ktlintTestPlayDebugSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverTestPlaySourceSet NO-SOURCE
+> Task :app:ktlintTestPlaySourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverTestReleaseSourceSet NO-SOURCE
+> Task :app:ktlintTestReleaseSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverTestSourceSet UP-TO-DATE
+> Task :app:ktlintTestSourceSetCheck UP-TO-DATE
+> Task :app:runKtlintCheckOverTestThirdPartyDebugSourceSet NO-SOURCE
+> Task :app:ktlintTestThirdPartyDebugSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverTestThirdPartySourceSet UP-TO-DATE
+> Task :app:ktlintTestThirdPartySourceSetCheck UP-TO-DATE
+> Task :app:runKtlintCheckOverThirdPartyDebugSourceSet NO-SOURCE
+> Task :app:ktlintThirdPartyDebugSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverThirdPartyReleaseSourceSet NO-SOURCE
+> Task :app:ktlintThirdPartyReleaseSourceSetCheck SKIPPED
+> Task :app:runKtlintCheckOverThirdPartySourceSet UP-TO-DATE
+> Task :app:ktlintThirdPartySourceSetCheck UP-TO-DATE
+> Task :app:runKtlintCheckOverMainSourceSet
+> Task :app:ktlintMainSourceSetCheck
+> Task :app:ktlintCheck
+
+BUILD SUCCESSFUL in 4s
+15 actionable tasks: 2 executed, 13 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.5.1/userguide/configuration_cache_enabling.html

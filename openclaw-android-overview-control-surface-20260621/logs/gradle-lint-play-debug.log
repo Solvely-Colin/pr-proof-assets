@@ -1,0 +1,146 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:prePlayDebugBuild UP-TO-DATE
+> Task :app:generatePlayDebugBuildConfig UP-TO-DATE
+> Task :app:generatePlayDebugResources UP-TO-DATE
+> Task :app:packagePlayDebugResources UP-TO-DATE
+> Task :app:processPlayDebugNavigationResources UP-TO-DATE
+> Task :app:parsePlayDebugLocalResources UP-TO-DATE
+> Task :app:generatePlayDebugRFile UP-TO-DATE
+> Task :app:compilePlayDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompilePlayDebug UP-TO-DATE
+> Task :app:compilePlayDebugJavaWithJavac UP-TO-DATE
+> Task :app:checkPlayDebugAarMetadata UP-TO-DATE
+> Task :app:mapPlayDebugSourceSetPaths UP-TO-DATE
+> Task :app:compilePlayDebugNavigationResources UP-TO-DATE
+> Task :app:mergePlayDebugResources UP-TO-DATE
+> Task :app:createPlayDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksPlayDebug UP-TO-DATE
+> Task :app:processPlayDebugMainManifest UP-TO-DATE
+> Task :app:processPlayDebugManifest UP-TO-DATE
+> Task :app:processPlayDebugManifestForPackage UP-TO-DATE
+> Task :app:processPlayDebugResources UP-TO-DATE
+> Task :app:bundlePlayDebugClassesToCompileJar UP-TO-DATE
+> Task :app:prePlayDebugAndroidTestBuild SKIPPED
+> Task :app:generatePlayDebugAndroidTestLintModel
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:generatePlayDebugLintReportModel
+> Task :app:prePlayDebugUnitTestBuild UP-TO-DATE
+> Task :app:generatePlayDebugUnitTestLintModel
+> Task :app:lintAnalyzePlayDebugAndroidTest
+> Task :app:lintAnalyzePlayDebugUnitTest
+> Task :app:lintAnalyzePlayDebug
+
+> Task :app:lintReportPlayDebug
+Wrote HTML report to file:///Users/solvely/.codex/worktrees/ff50/openclaw-clean-chat-control-triage-20260620/apps/android/app/build/reports/lint-results-playDebug.html
+Lint found 6 errors. First failure:
+/Users/solvely/.codex/worktrees/ff50/openclaw-clean-chat-control-triage-20260620/apps/android/app/src/play/AndroidManifest.xml:13: Error: READ_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to query or interact with MediaStore or media files on the shared storage, you should instead use one or more new storage permissions: READ_MEDIA_IMAGES, READ_MEDIA_VIDEO or READ_MEDIA_AUDIO. [ScopedStorage]
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+> Task :app:lintPlayDebug FAILED
+Lint found 6 errors. First failure:
+
+/Users/solvely/.codex/worktrees/ff50/openclaw-clean-chat-control-triage-20260620/apps/android/app/src/play/AndroidManifest.xml:13: Error: READ_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to query or interact with MediaStore or media files on the shared storage, you should instead use one or more new storage permissions: READ_MEDIA_IMAGES, READ_MEDIA_VIDEO or READ_MEDIA_AUDIO. [ScopedStorage]
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScopedStorage":
+   Scoped storage is enforced on Android 10+ (or Android 11+ if using
+   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+   no longer provide write access to all files; it will provide the equivalent
+   of READ_EXTERNAL_STORAGE instead.
+
+   As of Android 13, if you need to query or interact with MediaStore or media
+   files on the shared storage, you should be using instead one or more new
+   storage permissions:
+   * android.permission.READ_MEDIA_IMAGES
+   * android.permission.READ_MEDIA_VIDEO
+   * android.permission.READ_MEDIA_AUDIO
+
+   and then add maxSdkVersion="33" to the older permission. See the developer
+   guide for how to do this:
+   https://developer.android.com/about/versions/13/behavior-changes-13#granula
+   r-media-permissions
+
+   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+   it is rarely necessary and most apps on Google Play are not allowed to use
+   it. Most apps should instead migrate to use scoped storage. To modify or
+   delete files, apps should request write access from the user as described
+   at https://goo.gle/android-mediastore-createwriterequest.
+
+   To learn more, read these resources: Play policy:
+   https://goo.gle/policy-storage-help Allowable use cases:
+   https://goo.gle/policy-storage-usecases
+
+   https://goo.gle/android-storage-usecases
+
+
+The full lint text report is located at:
+  /Users/solvely/.codex/worktrees/ff50/openclaw-clean-chat-control-triage-20260620/apps/android/app/build/intermediates/lint_intermediate_text_report/playDebug/lintReportPlayDebug/lint-results-playDebug.txt
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:lintPlayDebug' (registered by plugin 'com.android.internal.application').
+> Lint found errors in the project; aborting build.
+  
+  Fix the issues identified by lint, or create a baseline to see only new errors.
+  To create a baseline, run `gradlew updateLintBaseline` after adding the following to the module's build.gradle file:
+  ```
+  android {
+      lint {
+          baseline = file("lint-baseline.xml")
+      }
+  }
+  ```
+  For more details, see https://developer.android.com/studio/write/lint#snapshot
+  
+  Lint found 6 errors. First failure:
+  
+  /Users/solvely/.codex/worktrees/ff50/openclaw-clean-chat-control-triage-20260620/apps/android/app/src/play/AndroidManifest.xml:13: Error: READ_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to query or interact with MediaStore or media files on the shared storage, you should instead use one or more new storage permissions: READ_MEDIA_IMAGES, READ_MEDIA_VIDEO or READ_MEDIA_AUDIO. [ScopedStorage]
+          android:name="android.permission.READ_EXTERNAL_STORAGE"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+     Explanation for issues of type "ScopedStorage":
+     Scoped storage is enforced on Android 10+ (or Android 11+ if using
+     requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+     no longer provide write access to all files; it will provide the equivalent
+     of READ_EXTERNAL_STORAGE instead.
+  
+     As of Android 13, if you need to query or interact with MediaStore or media
+     files on the shared storage, you should be using instead one or more new
+     storage permissions:
+     * android.permission.READ_MEDIA_IMAGES
+     * android.permission.READ_MEDIA_VIDEO
+     * android.permission.READ_MEDIA_AUDIO
+  
+     and then add maxSdkVersion="33" to the older permission. See the developer
+     guide for how to do this:
+     https://developer.android.com/about/versions/13/behavior-changes-13#granula
+     r-media-permissions
+  
+     The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+     it is rarely necessary and most apps on Google Play are not allowed to use
+     it. Most apps should instead migrate to use scoped storage. To modify or
+     delete files, apps should request write access from the user as described
+     at https://goo.gle/android-mediastore-createwriterequest.
+  
+     To learn more, read these resources: Play policy:
+     https://goo.gle/policy-storage-help Allowable use cases:
+     https://goo.gle/policy-storage-usecases
+  
+     https://goo.gle/android-storage-usecases
+  
+  
+  The full lint text report is located at:
+    /Users/solvely/.codex/worktrees/ff50/openclaw-clean-chat-control-triage-20260620/apps/android/app/build/intermediates/lint_intermediate_text_report/playDebug/lintReportPlayDebug/lint-results-playDebug.txt
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 41s
+29 actionable tasks: 8 executed, 21 up-to-date
