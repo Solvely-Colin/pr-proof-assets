@@ -1,8 +1,8 @@
 # OpenClaw Android Overview Control Surface Proof
 
 Code branch: `codex/android-overview-control-surface`
-Code SHA: `e569d36f73`
-Base SHA: `5d1e649aea`
+Code SHA: `bcd16901bc`
+Base SHA: `2f33999898`
 Captured: 2026-06-21
 
 ## Final Lint-Clean App Proof

@@ -1,16 +1,12 @@
-review still running: codex elapsed=60s pid=95549
-review still running: codex elapsed=120s pid=95549
-review still running: codex elapsed=180s pid=95549
-review still running: codex elapsed=240s pid=95549
-review still running: codex elapsed=300s pid=95549
-review still running: codex elapsed=360s pid=95549
+review still running: codex elapsed=60s pid=6367
+review still running: codex elapsed=120s pid=6367
 autoreview target: branch
 branch: codex/android-overview-control-surface
 engine: codex
 tools: on
 web_search: on
 ref: origin/main
-bundle: 97601 chars
+bundle: 97699 chars
 autoreview clean: no accepted/actionable findings reported
-overall: patch is correct (0.84)
-I did not find any actionable regressions in the provided change bundle. The Android overview/control-surface wiring, Providers & Models route addition, platform API/lint fixes, Play manifest permission cleanup, and debug voice E2E receiver permission plus run-as harness repair appear consistent with the changed surfaces and available proof.
+overall: patch is correct (0.86)
+I found no actionable defects in the reviewed bundle. The debug voice E2E receiver is non-exported and the run-as harness path is proven by the included receiver probe; the Providers & Models routing is wired through the new settings route and existing provider screen; and the lint-oriented changes appear scoped to Android API/permission visibility behavior without introducing a concrete regression.

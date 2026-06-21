@@ -34,6 +34,6 @@
 > Task :app:processPlayDebugUnitTestJavaRes UP-TO-DATE
 > Task :app:testPlayDebugUnitTest UP-TO-DATE
 
-BUILD SUCCESSFUL in 478ms
+BUILD SUCCESSFUL in 673ms
 30 actionable tasks: 30 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.5.1/userguide/configuration_cache_enabling.html
