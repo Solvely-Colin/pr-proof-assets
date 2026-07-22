@@ -1,0 +1,28 @@
+{
+  "after": {
+    "avatarLeft": 1181,
+    "avatarRight": 1217,
+    "bubbleRight": 1171,
+    "gap": 10,
+    "slotDisplay": "grid",
+    "slotLeft": 1181,
+    "slotRight": 1217,
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  "before": {
+    "avatarLeft": 662,
+    "avatarRight": 698,
+    "bubbleRight": 1171,
+    "gap": -509,
+    "slotDisplay": "contents",
+    "slotLeft": 0,
+    "slotRight": 0,
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  }
+}
