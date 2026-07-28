@@ -1,0 +1,39 @@
+PR #113908 saved-task process-restoration discriminator
+
+Device:
+Android 16 / API 36 ARM64 emulator
+
+Procedure:
+1. Install the candidate APK without clearing app data.
+2. Start the normal MainActivity and select Chat.
+3. Send the app to the background with KEYCODE_HOME.
+4. Kill the app process from the app UID with:
+   run-as ai.openclaw.app kill -9 <pid>
+5. Bring the existing task back with:
+   am start -W -n ai.openclaw.app/.MainActivity
+
+PR head:
+46dc3194489e47e86f86123eb7748fd788b47546
+APK SHA-256:
+89992b420e7afcd071a3fed19fdb6635df307fa26b65e528e83cab7ddc398e15
+Result:
+FATAL EXCEPTION: main
+Process: ai.openclaw.app
+java.lang.NullPointerException: Attempt to invoke virtual method
+'boolean ai.openclaw.app.ui.chat.ChatReaderState.getHasNewerContent()'
+on a null object reference
+at ai.openclaw.app.ui.chat.ChatReaderScrollControllerKt.rememberChatReaderScrollController(ChatReaderScrollController.kt:146)
+
+PR-recorded base:
+8eaa4d6d703e15a5821ef5b9ab70d8474c34b068
+APK SHA-256:
+8e0544e88cbe448281419228128534f265e0173ed38da3e208d7346d63084769
+Result:
+The same FATAL EXCEPTION and null ChatReaderState failure occurred in the
+unchanged ChatReaderScrollController implementation
+(ChatReaderScrollController.kt:146; base ChatScreen call site line 1294).
+
+Attribution:
+ChatReaderScrollController.kt and ShellNavigation.kt are byte-identical between
+the recorded base and PR head. The crash is therefore a pre-existing Android
+saved-task process-restoration defect, not a regression introduced by PR #113908.
