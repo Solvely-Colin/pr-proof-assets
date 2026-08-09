@@ -2,7 +2,7 @@
 
 Proof for https://github.com/openclaw/openclaw/pull/120791.
 
-Source head: `0b453e0eee`
+Source head: `faf257250c`
 
 ## Scenario
 
@@ -32,7 +32,7 @@ PASS autoreview — no accepted/actionable findings
 ## SHA-256
 
 ```text
-e8c04a3d3fb67c4297641e1bc4cf509a48b6d53ee05b587d01efbd9786727a93  profile-identity-sync.gif
-74d45d3a89273edcf6edffbe1fb31d9af80a39fff371d69fd3fca4f01fc91785  before-stale-sidebar-identity.png
-f7061efef38a30cf94da465d696bd635df096f553ee8f895b1ea32390373e9b3  after-refreshed-sidebar-identity.png
+9dbcaeb5f984d86015820e940630a90c2ba6025bbb61d9570d647d508f9c89c3  profile-identity-sync.gif
+58d4ec8e067da14f6da4a9696f4e7844d223472bd6d397c728079e816dde2ba2  before-stale-sidebar-identity.png
+0375742301d9d2ff1f54b05ac44400e993e1b7a81a32b02bdd58b940eadae13a  after-refreshed-sidebar-identity.png
 ```
