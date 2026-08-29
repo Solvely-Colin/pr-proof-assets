@@ -1,0 +1,15 @@
+Building for debugging...
+[Computing dependencies]
+[Pre-planning 1 / 598]
+[Planning deferred tasks]
+[1 / 5]
+[6 / 7] OpenClawKitTests-product
+Build complete! (0.98 sec)
+◇ Test run started.
+↳ Testing Library Version: 2070
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite ChatCommandOutboxStoreTests started.
+◇ Test "pre v7 upgrade reopens and fences a settings bound retry" started.
+✔ Test "pre v7 upgrade reopens and fences a settings bound retry" passed after 0.045 seconds.
+✔ Suite ChatCommandOutboxStoreTests passed after 0.045 seconds.
+✔ Test run with 1 test in 1 suite passed after 0.045 seconds.

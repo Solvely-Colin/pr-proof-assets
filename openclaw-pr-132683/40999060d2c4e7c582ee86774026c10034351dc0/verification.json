@@ -1,0 +1,10 @@
+{
+  "openclawHead": "40999060d2c4e7c582ee86774026c10034351dc0",
+  "hookNestedMutationBlocked": "passed",
+  "admittedSettingsOwnerPrivate": true,
+  "hookRestrictionFactWritable": false,
+  "acpFailClosed": "passed",
+  "pluginSdkAcpTests": 16,
+  "sqliteMigrationReopenRetry": "passed",
+  "gatewayAdmissionSettingsTests": 2
+}
