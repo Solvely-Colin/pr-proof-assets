@@ -6,5 +6,9 @@
   "acpFailClosed": "passed",
   "pluginSdkAcpTests": 16,
   "sqliteMigrationReopenRetry": "passed",
-  "gatewayAdmissionSettingsTests": 2
+  "gatewayAdmissionSettingsTests": 2,
+  "realGatewayFinalEffectObserved": true,
+  "realGatewaySentinelCreated": false,
+  "realGatewayExecDenied": true,
+  "testExitAfterProof": "nonzero-on-tool-description-regex"
 }

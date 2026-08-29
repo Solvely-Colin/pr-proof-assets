@@ -11,6 +11,12 @@ Evidence for OpenClaw head `40999060d2c4e7c582ee86774026c10034351dc0`.
   cold-reopens again with the captured settings intact.
 - `gateway-owner-boundary.log` — admission CAS, broaden-after-admission freeze, and ACP
   fail-closed owner tests pass.
+- `gateway-final-effect.log` — exact-head Testbox `tbx_01m17bj6s63k0zn8hvavzfys8t` drove a
+  real child Gateway and embedded runtime. The provider planned the exec write, the returned tool
+  output contained the execution denial, and the sentinel file was absent. Those assertions passed;
+  the test exited later because its tool-inventory regex matched the word `write` inside unrelated
+  tool descriptions. Follow-up head `f738aa7f20939efec0e421adcee2077ec0df9086` fixes that
+  test-only assertion by inspecting declared tool names.
 
 The authority object remains private to the default runtime path. Public reply-dispatch hooks now
 receive only the immutable derived fact needed by ACPX; no hook receives the nested permission or
