@@ -1,0 +1,8 @@
+{
+  "openclawHead": "d1fdfd23cd8f2925fa8c5aa6f6a4afb25a168e1f",
+  "sqliteMigrationReopenRetry": "passed",
+  "gatewayAdmissionSettingsTests": 2,
+  "acpRestrictionTests": 1,
+  "gatewayOwnerBoundary": "passed",
+  "fullQaRuntimeExecution": "not-claimed"
+}
