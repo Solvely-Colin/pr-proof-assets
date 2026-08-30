@@ -1,0 +1,9 @@
+{
+  "openclawHead": "89f8bd4cb1fbff214857bbcc85db5357fd4fb4dc",
+  "parentHead": "15661d458ee8695aa51fe47c1b864317cd55d38b",
+  "runtimeProofHead": "88ec1aae7e88087a611167db07f8423d9b106341",
+  "settingsCasLeaseFence": "passed before transport dispatch",
+  "nativeI18nDrift": false,
+  "unusedExportGuard": "passed",
+  "genericIosSimulatorBuild": "passed"
+}

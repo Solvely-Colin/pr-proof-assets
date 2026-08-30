@@ -1,0 +1,11 @@
+{
+  "openclawHead": "15661d458ee8695aa51fe47c1b864317cd55d38b",
+  "runtimeProofHead": "eb19e297d4ab35a82dc8b9aeffa0dc5f9ad8c0c6",
+  "finalDelta": "dead production seam removal and test-helper relocation",
+  "productionDelta": {"added": 2, "removed": 49},
+  "testSupportDelta": {"added": 16, "removed": 0},
+  "nativeI18nDrift": false,
+  "unusedExportGuard": "passed",
+  "swiftTestCompilation": "passed",
+  "genericIosSimulatorBuild": "passed"
+}
