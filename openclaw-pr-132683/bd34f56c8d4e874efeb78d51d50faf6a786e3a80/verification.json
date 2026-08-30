@@ -1,0 +1,8 @@
+{
+  "openclawHead": "bd34f56c8d4e874efeb78d51d50faf6a786e3a80",
+  "baseHead": "d434b3dbe0b23af6854084d4fa94cbb9257aaf8a",
+  "gatewayAdmissionTests": 69,
+  "gatewayLint": "passed",
+  "messagingTypecheck": "passed",
+  "nativeI18nDrift": false
+}

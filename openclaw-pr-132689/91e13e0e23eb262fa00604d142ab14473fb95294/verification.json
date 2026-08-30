@@ -1,0 +1,7 @@
+{
+  "openclawHead": "91e13e0e23eb262fa00604d142ab14473fb95294",
+  "parentHead": "bd34f56c8d4e874efeb78d51d50faf6a786e3a80",
+  "settingsCasLeaseFence": "passed before transport dispatch",
+  "swiftLintViolations": 0,
+  "nativeI18nDrift": false
+}

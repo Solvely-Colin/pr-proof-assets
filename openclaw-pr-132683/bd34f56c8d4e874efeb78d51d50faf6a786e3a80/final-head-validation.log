@@ -1,0 +1,4 @@
+$ node --import ./scripts/tsx.mjs scripts/native-app-i18n.ts verify
+native-app-i18n: entries=4397 changed=false
+android-app-i18n: appSourceKeys=1667 thirdPartySourceKeys=4 wearSourceKeys=122
+apple-app-i18n: sourceMacosKeys=1419

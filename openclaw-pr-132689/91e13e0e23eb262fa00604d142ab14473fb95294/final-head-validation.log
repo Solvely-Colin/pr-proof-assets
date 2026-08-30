@@ -1,0 +1,20 @@
+Building for debugging...
+[Computing dependencies]
+[Provisioning 8 / 28]
+[Pre-planning 1 / 598]
+[Planning deferred tasks]
+[1 / 4] OpenClawChatUI
+[6 / 7] OpenClawKitTests-product
+Build complete! (0.94 sec)
+◇ Test run started.
+↳ Testing Library Version: 2070
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite ChatViewModelOutboxSettingsTests started.
+◇ Test "route lease rejects settings-bound send when CAS is unavailable" started.
+✔ Test "route lease rejects settings-bound send when CAS is unavailable" passed after 0.001 seconds.
+✔ Suite ChatViewModelOutboxSettingsTests passed after 0.001 seconds.
+✔ Test run with 1 test in 1 suite passed after 0.001 seconds.
+$ node --import ./scripts/tsx.mjs scripts/native-app-i18n.ts verify
+native-app-i18n: entries=4406 changed=false
+android-app-i18n: appSourceKeys=1667 thirdPartySourceKeys=4 wearSourceKeys=122
+apple-app-i18n: sourceMacosKeys=1428
