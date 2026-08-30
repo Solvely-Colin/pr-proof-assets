@@ -1,0 +1,22 @@
+^DBuilding for debugging...
+[Computing dependencies]
+[Pre-planning 1 / 598]
+[Planning deferred tasks]
+[1 / 5]
+[3 / 10] Markdown
+[8 / 9] OpenClawNativeStateTests-product
+Build complete! (1.00 sec)
+◇ Test run started.
+↳ Testing Library Version: 2070
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite ChatCommandOutboxStoreTests started.
+◇ Suite ChatComposerStateTests started.
+◇ Test "pre v7 upgrade reopens and fences a settings bound retry" started.
+◇ Test "legacy null settings row cannot claim or retry without current client authorization" started.
+◇ Test "model selection matches qualified choices after gateway readback" started.
+✔ Test "model selection matches qualified choices after gateway readback" passed after 0.001 seconds.
+✔ Suite ChatComposerStateTests passed after 0.001 seconds.
+✔ Test "legacy null settings row cannot claim or retry without current client authorization" passed after 0.039 seconds.
+✔ Test "pre v7 upgrade reopens and fences a settings bound retry" passed after 0.048 seconds.
+✔ Suite ChatCommandOutboxStoreTests passed after 0.048 seconds.
+✔ Test run with 3 tests in 2 suites passed after 0.048 seconds.

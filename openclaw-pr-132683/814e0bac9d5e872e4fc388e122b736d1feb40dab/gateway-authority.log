@@ -1,0 +1,187 @@
+^D[test] starting test/vitest/vitest.gateway.config.ts
+
+ RUN  v4.1.11 <openclaw-parent>
+
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send rejects archived sessions before dispatch
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send fences the admitted session settings
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send keeps stored settings for legacy callers after the session row broadens 668ms
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > keeps started chat dispatch on its retained request root
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > delivers a queued WebChat reply over the live Gateway WebSocket after its source ends
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.send accepts dashboard messages for existing sessions
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt drains the captured admission before starting
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt releases its admission when backend cancellation throws
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt releases its admission when session interruption throws
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt drains a non-reply session admission before dispatching
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt starts normally when the session is idle
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.send creates a configured agent main session before sending
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.steer accepts dashboard follow-up messages for existing sessions
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.abort stops active dashboard runs
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.abort resolves active runs by runId without a caller session key
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sanitizes inbound chat.send message text and rejects null bytes
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > handles chat send and history flows
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send accepts the backing session id returned by chat.history
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history applies the reset kept-tail cut and preserves its marker
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > marks a running webchat session failed when restart drain overlaps dispatch rejection
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'structured context-overflow code' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'provider request-too-large code' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'provider context-window message' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'embedded context-overflow message' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'token-per-minute rate limit' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'private upstream failure' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant NO_REPLY-only entries
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant control replies in Responses output blocks
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history mirrors current-session message tool sends before NO_REPLY
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history mirrors message success …'
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history mirrors message success …'
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history hides suppressed deliver…'
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history hides dry-run delivery e…'
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history marks message-tool replies held for internal source delivery
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides raw delivery-mirror rows but keeps message-tool mirrors
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history carries managed images from a message-tool delivery mirror
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history binds equal-text delivery mirrors to their message tool calls
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not caption-match a populated unmatched delivery ID
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history keeps message-tool mirrors before silent completion rows
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides delivery mirrors that precede successful tool results
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history preserves other pending message-tool mirrors while deduping one send
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history keeps standalone delivery-mirror rows
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history mirrors current-session message tool sends with channel hints
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror explicitly routed message tool sends
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history keeps confirmed current-source sends before a later final
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror suppressed current-source sends
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror message tool sends from unmatched results
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror dry-run message tool sends
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides commentary-only assistant entries
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant announce/reply skip-only entries
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > preserves split fenced-code indentation in chat.send events and history
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes chat.send slash commands without agent runs
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes /btw replies through side-result events without transcript injection
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > preserves split fenced-code indentation in /btw side-result events
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes block-streamed /btw replies through side-result events
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history persists assistant image data URLs as managed image blocks
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant NO_REPLY-only entries and keeps mixed-content assistant entries
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history uses the owning agent thinkingDefault for non-default agent sessions
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not persist verboseLevel for operator.write callers
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not persist one-turn thinking metadata
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not rotate sessions for operator.write reset triggers
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait resolves chat.send runs that finish without lifecycle events
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores stale chat dedupe when an agent run with the same runId is in flight
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > retains the session fixture while admitted dispatch settles after callback return
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > retains the session fixture while admitted dispatch settles after callback throw
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores stale agent snapshots while same-runId chat.send is active
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores lifecycle completion while same-runId chat.send is active
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent events include sessionKey and agent.wait covers lifecycle flows
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 67 skipped (68)
+   Start at  11:47:46
+   Duration  10.16s (transform 9.01s, setup 285ms, import 4.16s, tests 5.57s, environment 0ms)
+
+[test] starting test/vitest/vitest.auto-reply.config.ts
+
+ RUN  v4.1.11 <openclaw-parent>
+
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'local session'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'new session'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'stale ACP key'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'stored ACP session'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'ACP command target'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'local command target from ACP source'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'bound ACP reset tail'
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > refuses restricted ACP takeover before invoking reply hooks 37ms
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > distinguishes hidden allowlist intersections in steering authority
+ ✓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > distinguishes session permission and tool settings in steering authority 4ms
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > distinguishes the concrete 'provider' route in steering authority
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > distinguishes the concrete 'model' route in steering authority
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > projects only while the active operation owns a concrete route
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > tracks the concrete authority route across fallback candidates
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps ownership stable by sessionKey while sessionId rotates
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > treats queued reply operations as non-abortable for compaction
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > records reply-operation progress without claiming embedded-run activity
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps repeated request evidence across reply-operation progress
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > tracks deferred-maintenance wait as a reply-operation phase
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps a reply alive while the saturated global lane waits past the stale threshold
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > clears deferred-maintenance operations immediately on user abort
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > does not reset deferred-maintenance operations as backend-owned work
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > clears queued operations immediately on user abort
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > runs completeThen callbacks after active state clears
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > clears active state before a deferred after-clear barrier settles
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps owner settlement pending after stale expiry through its completion barrier
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > interrupts only the captured operation when its abort admits a same-key successor
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > installs stale recovery barrier before synchronous cancel completion
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > settles a reentrant completion independently of its recovery fence
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > retains exact ownership when stale backend cancellation throws
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > retains exact ownership when stale backend cancellation awaits terminal completion
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > retains pre-backend ownership and rejects a backend that attaches after expiry
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > bounds retained ownership when stale cancellation awaits terminal completion
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > bounds retained ownership when stale cancellation throws undefined
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps a reentrant completion fenced when cancel then throws
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps late after-clear registration behind an active stale barrier
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps later after-clear work behind earlier delivery barriers
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps follow-up admission blocked until slow delivery settles
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > fences every durable alias until successor handoff settles
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > stops a successor wait when its signal aborts
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > extends a hung delivery barrier only while bounded owner work remains active
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps follow-up admission blocked during an unsettled inter-block delay
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > eventually releases a permanently hung delivery barrier at the default timeout
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > retains failed operations until final delivery completes
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps retained terminal failures immutable across late aborts
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > records upstream cancellation as an aborted operation
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > records upstream restart cancellation separately
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > clears queued ownership when the upstream signal is already aborted
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > does not cancel the backend twice when upstream abort follows a user abort
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > preserves cleanup when backend cancellation throws: 'user abort while queued'
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > preserves cleanup when backend cancellation throws: 'restart abort while queued'
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > preserves cleanup when backend cancellation throws: 'user abort while running'
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > preserves cleanup when backend cancellation throws: 'restart abort while running'
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > force-releases a running aborted operation when the owner never returns
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps late owner complete harmless after forced terminal release
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > force-releases retained failures when the owner never completes
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps run_stalled attribution and ownership when cancel re-enters abortByUser
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps supersession attribution when backend cancellation re-enters user abort
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > supersedes an abort-frozen heartbeat owner without cancelling its backend
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > does not supersede a retained terminal reply owner
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > cancels terminal settle when the owner clears state first
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > force-clears retained failed operations
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > does not force-clear a replacement operation through a stale owner
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > force-clears a running operation after abort without backend cleanup
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > rejects aborts while the attached backend is finalizing
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps finalizing reply bookkeeping through forced in-process restart
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps abort frozen after the backend detaches for reply delivery
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > expires finalization when its owner stops making progress
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > renews finalization from owner progress
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > preserves bounded work that starts before finalization
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > does not shorten bounded work when ordinary activity renews
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > honors a bounded extended finalization lease
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps late finalization cleanup from clearing a successor
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > clamps oversized wait timers instead of resolving idle waits immediately
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > waits for reply-run completion without a timer when requested
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > queues messages only through the active running backend
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > queues messages only when the task-suggestion tool surface matches
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > queues image inputs only through backends that preserve them: {"images":[{"type":"image","data":"png","mimeType":"image/png"}]}
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > queues image inputs only through backends that preserve them: {"media":[{"path":"/tmp/stored.png","contentType":"image/png"}]}
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > queues image inputs only through backends that preserve them: {"imageOrder":["offloaded"]}
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > queues messages through queue-first legacy backends while token streaming is idle
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > rejects inbound steering when tool authority changes before backend admission
+ ✓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > projects inbound authority before backend admission without forwarding the overlay 3ms
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > refuses stale injectable owners for admission and delivery until activity resumes
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > does not queue messages through stopped backends
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > fails closed when backend stopped state checks throw
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > requires a real injection capability
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > returns synchronous and asynchronous queue failures as typed rejections
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > reports callback acceptance before outcome and composes the caller callback
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > falls back to queue settlement when the backend ignores acceptance callbacks
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps callback acceptance authoritative over later queue rejection
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > rejects an ABA successor even when key and leaf are reused
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > uses a replacement backend on the same operation
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > keeps an invoked queue authoritative when the owner clears synchronously
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > aborts compacting runs through the registry compatibility helper
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > moves a queued reservation to the target slot and frees the source
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > refuses to rekey onto an owned target slot and keeps the source slot
+ ↓ |auto-reply| src/auto-reply/reply/reply-run-registry.test.ts > reply run registry > refuses to rekey after the run leaves the queued phase
+
+ Test Files  2 passed (2)
+      Tests  3 passed | 95 skipped (98)
+   Start at  11:47:57
+   Duration  7.85s (transform 5.03s, setup 269ms, import 2.27s, tests 5.18s, environment 0ms)
+
+[test] passed 2 Vitest shards in 20.46s

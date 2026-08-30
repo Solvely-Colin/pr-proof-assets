@@ -1,0 +1,16 @@
+{
+  "openclawHead": "814e0bac9d5e872e4fc388e122b736d1feb40dab",
+  "baseHead": "fa6b02a14d6e25ada64d12e0c2c217df2d0b54c8",
+  "uiTest": {
+    "name": "testChatComposerStartsCompactAndGrowsWithDraft",
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0
+  },
+  "legacyCallerAuthorityFreeze": "passed",
+  "restrictedRuntimeTakeoverFence": "passed",
+  "steeringAuthorityFingerprint": "passed",
+  "legacyNullSettingsClaimFence": "passed",
+  "sqliteMigrationReopenRetry": "passed",
+  "modelSelectionCanonicalization": "passed"
+}
