@@ -1,0 +1,12 @@
+{
+  "openclawHead": "8817e126c4322606668242c0c2f17bb2ec2f7ff1",
+  "parentHead": "f29f0a561a7574687e2123208e29816f146fe437",
+  "messagingTypecheck": "passed",
+  "localizedSettingsConflictReason": "passed",
+  "composerParityTests": 20,
+  "clientDatabaseAndOutboxTests": 62,
+  "legacyNullSettingsClaimFence": "passed",
+  "preV7Reopen": "passed",
+  "olderGatewayStructuredReplayParking": "passed",
+  "genericIosSimulatorBuild": "passed"
+}
