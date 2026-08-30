@@ -1,0 +1,32 @@
+$ node --import ./scripts/tsx.mjs scripts/native-app-i18n.ts verify
+native-app-i18n: entries=4406 changed=false
+android-app-i18n: appSourceKeys=1667 thirdPartySourceKeys=4 wearSourceKeys=122
+apple-app-i18n: sourceMacosKeys=1428
+$ node --import ./scripts/tsx.mjs scripts/check-deadcode-exports.mts
+[deadcode] Knip script unused-export scan passed with 0 entries.
+[deadcode] Knip production unused-export scan passed with 0 entries.
+[deadcode] Knip full-tree unused-export scan passed with 0 entries.
+Building for debugging...
+[Computing dependencies]
+[Pre-planning 1 / 598]
+[Planning deferred tasks]
+[1 / 5]
+[2 / 6] OpenClawKit
+[3 / 7] OpenClawKit
+[7 / 11] OpenClawChatUI
+[8 / 12] OpenClawChatUI
+[15 / 22] OpenClawKit
+[26 / 33] OpenClawChatUI
+[27 / 33] OpenClawChatUI
+[29 / 32] OpenClawKitTests-product
+[35 / 38] OpenClawKitTests-product
+[40 / 40] OpenClawKitTests-product
+Build complete! (24.34 sec)
+◇ Test run started.
+↳ Testing Library Version: 2070
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite ChatViewModelOutboxTests started.
+◇ Test "typed session settings change preserves localized outbox reason" started.
+✔ Test "typed session settings change preserves localized outbox reason" passed after 0.039 seconds.
+✔ Suite ChatViewModelOutboxTests passed after 0.039 seconds.
+✔ Test run with 1 test in 1 suite passed after 0.039 seconds.

@@ -1,0 +1,9 @@
+{
+  "openclawHead": "88ec1aae7e88087a611167db07f8423d9b106341",
+  "parentHead": "eb19e297d4ab35a82dc8b9aeffa0dc5f9ad8c0c6",
+  "messagingTypecheck": "passed",
+  "localizedSettingsConflictReason": "passed",
+  "genericIosSimulatorBuild": "passed",
+  "macosStructuredLeaseCaller": "compiled",
+  "macosFullBuild": "blocked by unrelated current-main Xcode 27 API rename"
+}
