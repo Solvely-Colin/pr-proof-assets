@@ -1,0 +1,245 @@
+^D[test] starting test/vitest/vitest.gateway.config.ts
+
+ RUN  v4.1.11 <openclaw-parent>
+
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send rejects archived sessions before dispatch
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send fences the admitted session settings 553ms
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send keeps admitted settings after the session row broadens
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > keeps started chat dispatch on its retained request root
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > delivers a queued WebChat reply over the live Gateway WebSocket after its source ends
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.send accepts dashboard messages for existing sessions
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt drains the captured admission before starting
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt releases its admission when backend cancellation throws
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt releases its admission when session interruption throws
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt drains a non-reply session admission before dispatching
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt starts normally when the session is idle
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.send creates a configured agent main session before sending
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.steer accepts dashboard follow-up messages for existing sessions
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.abort stops active dashboard runs
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.abort resolves active runs by runId without a caller session key
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sanitizes inbound chat.send message text and rejects null bytes
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > handles chat send and history flows
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send accepts the backing session id returned by chat.history
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history applies the reset kept-tail cut and preserves its marker
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > marks a running webchat session failed when restart drain overlaps dispatch rejection
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'structured context-overflow code' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'provider request-too-large code' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'provider context-window message' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'embedded context-overflow message' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'token-per-minute rate limit' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'private upstream failure' over authenticated WebSocket
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant NO_REPLY-only entries
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant control replies in Responses output blocks
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history mirrors current-session message tool sends before NO_REPLY
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history mirrors message success …'
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history mirrors message success …'
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history hides suppressed deliver…'
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history hides dry-run delivery e…'
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history marks message-tool replies held for internal source delivery
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides raw delivery-mirror rows but keeps message-tool mirrors
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history carries managed images from a message-tool delivery mirror
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history binds equal-text delivery mirrors to their message tool calls
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not caption-match a populated unmatched delivery ID
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history keeps message-tool mirrors before silent completion rows
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides delivery mirrors that precede successful tool results
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history preserves other pending message-tool mirrors while deduping one send
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history keeps standalone delivery-mirror rows
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history mirrors current-session message tool sends with channel hints
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror explicitly routed message tool sends
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history keeps confirmed current-source sends before a later final
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror suppressed current-source sends
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror message tool sends from unmatched results
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror dry-run message tool sends
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides commentary-only assistant entries
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant announce/reply skip-only entries
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > preserves split fenced-code indentation in chat.send events and history
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes chat.send slash commands without agent runs
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes /btw replies through side-result events without transcript injection
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > preserves split fenced-code indentation in /btw side-result events
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes block-streamed /btw replies through side-result events
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history persists assistant image data URLs as managed image blocks
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant NO_REPLY-only entries and keeps mixed-content assistant entries
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history uses the owning agent thinkingDefault for non-default agent sessions
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not persist verboseLevel for operator.write callers
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not persist one-turn thinking metadata
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not rotate sessions for operator.write reset triggers
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait resolves chat.send runs that finish without lifecycle events
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores stale chat dedupe when an agent run with the same runId is in flight
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > retains the session fixture while admitted dispatch settles after callback return
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > retains the session fixture while admitted dispatch settles after callback throw
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores stale agent snapshots while same-runId chat.send is active
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores lifecycle completion while same-runId chat.send is active
+ ↓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent events include sessionKey and agent.wait covers lifecycle flows
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 67 skipped (68)
+   Start at  09:54:38
+   Duration  8.07s (transform 6.96s, setup 305ms, import 3.21s, tests 4.41s, environment 0ms)
+
+[test] starting test/vitest/vitest.auto-reply.config.ts
+
+ RUN  v4.1.11 <openclaw-parent>
+
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > runs a handled plugin reply hook in the registry scope
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > still applies send-policy deny after an unhandled plugin dispatch
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > keeps admitted session settings owner-private from unhandled hooks 37ms
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > clears pending final delivery after final dispatch succeeds
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > clears pending final delivery when abort fires after a successful final send (#89115)
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > preserves pending final delivery when final dispatch fails
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > preserves pending final delivery when beforeDeliver times out
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > clears pending final delivery when a later queued final succeeds
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > preserves the durable final when an earlier auxiliary final succeeds
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > records each pending-final delivery without rewriting aggregate text
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > does not let an older settlement rewrite a newer pending-final intent
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > reconciles pending final delivery after direct retryable provider proof
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > reconciles pending final delivery after wrapped retryable provider proof
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > reconciles pending final delivery after wrapped pre-connect ECONNREFUSED proof
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > reconciles pending final delivery after permanent provider rejection
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > reconciles pending final delivery after partial outbound delivery
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > reconciles pending final delivery after nested partial envelope
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > reconciles pending final delivery after aggregate partial envelope
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > reconciles pending final delivery after observer-attached delivery evidence
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > reconciles pending final delivery after ambiguous transport failure
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > clears pending final delivery after intentional pre-delivery cancellation
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > delivers a generated final reply before queued follow-up admission
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > releases a stalled finalizing dispatch and rejects its late reply
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > keeps bounded TTS fallback work alive past the default finalization lease
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > dedupes equivalent non-streaming final payload entries for one turn
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > preserves final payloads with 'different native locations'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > preserves final payloads with 'normal and round videos sharing the s…'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > preserves final payloads with 'distinct route metadata'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > preserves final payloads with 'distinct reply-threading identity'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch.test.ts > dispatchReplyFromConfig reply_dispatch hook > preserves final payloads with 'distinct assistant messages'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > records an accepted channel input in the canonical participant store
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > admits ACP message turns with the original channel participant
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > passes one turn-scoped elicitation handler and fences it after admission closes
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > records one owner-bound unsupported native-action receipt after 'canonical' ACP admission
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > records one owner-bound unsupported native-action receipt after 'legacy' ACP admission
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps ACP native-action evidence one-shot after abort and terminal lifecycle
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > uses the current sink after replacement for each ACP dispatch closure
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps ACP dispatch fail-open when no runtime-action sink is installed
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > projects normal ACP dispatch lifecycle and tool events into audit diagnostics
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > requires a synchronous completion acknowledgement from 'no observer'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > requires a synchronous completion acknowledgement from 'void observer'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > requires a synchronous completion acknowledgement from 'legacy boolean result'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > requires a synchronous completion acknowledgement from 'legacy object result'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > requires a synchronous completion acknowledgement from 'asynchronous result'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > requires a synchronous completion acknowledgement from 'completion owner'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps audit run ids unique when channel message ids repeat
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > routes default ACP output to the originating channel as a final reply
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > records channel transform suppression without an ACP delivery claim
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > persists ACP transcript when routed delivery fails
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > persists the failed turn so the bound transcript matches the channel reply
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps streamed output ahead of the error when a turn fails mid-stream
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > preserves an intentionally empty canonical agent prompt
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > adds source delivery guidance to tool-only ACP turns
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > starts reply lifecycle for tool-only ACP turns while suppressing automatic delivery
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps same-provider tool-only ACP final replies private when an origin route exists
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > edits ACP tool lifecycle updates in place when supported
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > falls back to new tool message when edit fails
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > starts reply lifecycle when ACP turn starts, including hidden-only turns
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > starts reply lifecycle once per turn when output is delivered
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not mark ACP diagnostic progress when diagnostics are disabled
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not start reply lifecycle for empty ACP prompt
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > persists delivered ACP output for backend cancellation without a caller abort
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not persist final-only output rejected after caller cancellation
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > persists live ACP output delivered before caller cancellation
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps caller abort authoritative until completed output settles
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > records an ACP error when output finalization fails
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > skips media understanding for text-only ACP turns
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > skips media understanding for cached stickers while preserving their attachment
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > passes the ACP agent directory without declaring host-path access
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > passes exactly the resolved attachment indexes as delivered images
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > selects bounded recent local history images
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > preserves authoritative history image kinds, order, and per-message deduplication
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never reuses a historical document with an image-looking path and MIME undefined
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never reuses a historical document with an image-looking path and MIME application/pdf
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never reuses a historical document with an image-looking path and MIME image/png
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never reuses filename-only SVG history as a raster image
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never reuses unknown-kind image-looking history with concrete MIME application/pdf
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never reuses unknown-kind image-looking history with concrete MIME application/zip
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never reuses unknown-kind image-looking history with concrete MIME text/plain
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > adds recent history image context without exposing paths
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > forwards recent history image attachments into agent runtime turns
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps text-only turns off the agent media runtime
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not inject recent image history when the current image is 'resolved'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not inject recent image history when the current image is 'already described'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps history attachment indexes distinct from sparse current media indexes
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not fall back to recent history images when the current turn has non-image media
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > falls back to recent history images when current image attachments are unusable
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > forwards chat.send inline image attachments into agent runtime turns
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > forwards 'generic Telegram image bytes under a …' into the ACP runtime using the verified byte MIME
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > forwards 'an extensionless image without transp…' into the ACP runtime using the verified byte MIME
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > forwards 'a sticker with generic transport MIME' into the ACP runtime using the verified byte MIME
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never forwards 'valid PNG bytes without MIME' or substitutes unrelated history for a document
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never forwards 'valid PNG bytes with PDF MIME' or substitutes unrelated history for a document
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never forwards 'valid PNG bytes with contradictory im…' or substitutes unrelated history for a document
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never forwards 'PDF bytes with an image-looking filen…' or substitutes unrelated history for a document
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never forwards 'ZIP bytes with an image-looking filen…' or substitutes unrelated history for a document
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never forwards unknown-kind PNG bytes with MIME application/pdf or substitutes history
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never forwards unknown-kind PNG bytes with MIME application/zip or substitutes history
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never forwards unknown-kind PNG bytes with MIME text/plain or substitutes history
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never forwards filename-only SVG history into an ACP runtime turn
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never forwards 'PDF' bytes with a spoofed image kind, MIME, and filename
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never forwards 'ZIP' bytes with a spoofed image kind, MIME, and filename
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > falls back to history when an authoritative current image contains document bytes
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not substitute history for an authoritative current document
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > forwards 'a historical Telegram .bin image with…' into the ACP runtime using the verified byte MIME
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > forwards 'an extensionless historical image wit…' into the ACP runtime using the verified byte MIME
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > forwards 'a historical sticker with generic MIME' into the ACP runtime using the verified byte MIME
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not forward historical 'PDF' bytes disguised as image media
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not forward historical 'ZIP' bytes disguised as image media
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > annotates recent history images with sent time and available history position
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > forwards media-understanding PDF page images alongside current image attachments
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > omits described images while retaining first-read undescribed attachment bytes
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > drops recent image history after a 'resolved' current image is described
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > drops recent image history after a 'unreadable' current image is described
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > preserves chat.send inline image attachments over recent history images
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > skips agent runtime attachments outside allowed inbound roots
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > skips file URL agent runtime attachments outside allowed inbound roots
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > skips relative ACP attachment paths that resolve outside allowed inbound roots
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not fall back to remote URLs when ACP local attachment paths are blocked
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > skips ACP turns for non-image attachments when there is no text prompt
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > surfaces ACP policy errors as final error replies
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > fails closed when ACP dispatch cannot enforce restrictive runtime toolsAllow
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > fails closed before runTurn for admitted session restrictions 4ms
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > fails visibly when a bound ACP runtime receives restrictive conversation policy
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > audits ACP agent-policy rejections as blocked attempts
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > allows wildcard runtime toolsAllow through ACP dispatch
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not unbind stale bindings when ACP dispatch is disabled by policy
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > unbinds stale bound conversations before surfacing stale ACP resolution errors
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not unbind valid bindings on generic ACP runTurn init failure
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > unbinds stale bindings on ACP runTurn missing-metadata failures
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > uses canonical session keys for bound-session identity notices
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > honors the configured default account when checking bound-session identity notices
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not add a fallback when routed ACP text was already delivered as final
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > routes default ACP text as one final reply to Discord
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > routes default ACP text as one final reply to Slack
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > delivers default Telegram ACP text directly as a final reply
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > delivers default Discord ACP text directly as a final reply
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > delivers default Slack ACP text directly as a final reply
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > treats Telegram ACP final delivery as a successful final response
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > delivers default ACP text as final for channels without a visibility override
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > marks accumulated ACP block TTS finals as trusted local media for WebChat
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > delivers Telegram ACP final-mode TTS as one captioned voice reply
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps Telegram ACP TTS-only block text out of the voice caption
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps cross-block ACP TTS-only text out of the Telegram caption
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps tagged ACP TTS delivery single for '[[tts:text]]Private ACP speech.[[/tts…'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps tagged ACP TTS delivery single for '[[tts:text]]Private ACP speech.[[/tts…'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > keeps tagged ACP TTS delivery single for 'Visible ACP answer. [[tts:text]]Priva…'
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > falls back to Telegram ACP text when a routed captioned voice is suppressed
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > delivers deferred Telegram ACP text when the runtime is cancelled
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never leaks a marked private inbound prompt across ACP live text deltas via direct delivery
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > never leaks a marked private inbound prompt across ACP live text deltas via routed delivery
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > falls back to final text when a later telegram ACP block delivery fails
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > honors the configured default account for ACP projector chunking when AccountId is omitted
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > does not add a second routed payload when routed final text was already visible
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > skips fallback when TTS mode is all and final delivery already succeeded
+ ↓ |auto-reply| src/auto-reply/reply/dispatch-acp.test.ts > tryDispatchAcpReplyCore > skips final TTS and fallback when no block text was accumulated
+
+ Test Files  2 passed (2)
+      Tests  2 passed | 154 skipped (156)
+   Start at  09:54:46
+   Duration  15.42s (transform 12.63s, setup 610ms, import 4.21s, tests 10.41s, environment 0ms)
+
+[test] passed 2 Vitest shards in 25.79s

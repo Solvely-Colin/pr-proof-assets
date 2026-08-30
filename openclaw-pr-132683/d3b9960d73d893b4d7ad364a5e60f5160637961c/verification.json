@@ -1,0 +1,14 @@
+{
+  "openclawHead": "d3b9960d73d893b4d7ad364a5e60f5160637961c",
+  "baseHead": "fa6b02a14d6e25ada64d12e0c2c217df2d0b54c8",
+  "uiTest": {
+    "name": "testChatComposerStartsCompactAndGrowsWithDraft",
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0
+  },
+  "sqliteMigrationReopenRetry": "passed",
+  "gatewayAdmissionSettingsFence": "passed",
+  "hookAuthorityOwnerPrivate": "passed",
+  "acpRestrictionStopsBeforeRunTurn": "passed"
+}

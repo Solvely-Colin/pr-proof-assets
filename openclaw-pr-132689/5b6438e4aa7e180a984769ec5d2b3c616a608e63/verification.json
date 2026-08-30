@@ -1,0 +1,9 @@
+{
+  "openclawHead": "5b6438e4aa7e180a984769ec5d2b3c616a608e63",
+  "parentHead": "d3b9960d73d893b4d7ad364a5e60f5160637961c",
+  "nativeI18nEntries": 4406,
+  "nativeI18nDrift": false,
+  "candidateOlderReaderCandidateReopen": "passed",
+  "olderGatewayStructuredReplayParking": "passed",
+  "genericIosSimulatorBuild": "passed"
+}

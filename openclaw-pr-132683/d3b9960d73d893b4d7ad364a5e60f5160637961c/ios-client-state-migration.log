@@ -1,0 +1,20 @@
+^DBuilding for debugging...
+[Computing dependencies]
+[Constructing description]
+[Pre-planning 1 / 598]
+[Planning deferred tasks]
+[2 / 6] OpenClawChatUI
+[3 / 7] OpenClawChatUI
+[10 / 17] OpenClawChatUI
+[14 / 20] OpenClawChatUI
+[16 / 17] OpenClawKitTests-product
+[18 / 18] OpenClawKitTests-product
+Build complete! (9.07 sec)
+◇ Test run started.
+↳ Testing Library Version: 2070
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite ChatCommandOutboxStoreTests started.
+◇ Test "pre v7 upgrade reopens and fences a settings bound retry" started.
+✔ Test "pre v7 upgrade reopens and fences a settings bound retry" passed after 0.046 seconds.
+✔ Suite ChatCommandOutboxStoreTests passed after 0.047 seconds.
+✔ Test run with 1 test in 1 suite passed after 0.047 seconds.
