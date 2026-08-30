@@ -1,0 +1,14 @@
+{
+  "openclawHead": "eb19e297d4ab35a82dc8b9aeffa0dc5f9ad8c0c6",
+  "baseHead": "fa6b02a14d6e25ada64d12e0c2c217df2d0b54c8",
+  "runtimeProofHead": "f29f0a561a7574687e2123208e29816f146fe437",
+  "runtimeDeltaAfterProof": "generated i18n inventory and export visibility only",
+  "uiTest": {"passed": 1, "failed": 0, "skipped": 0},
+  "dispatchTests": 210,
+  "composerParityTests": 20,
+  "clientDatabaseAndOutboxTests": 59,
+  "nativeI18nEntries": 4397,
+  "nativeI18nDrift": false,
+  "unusedExportGuard": "passed",
+  "sqliteSessionSchemaBaseline": "passed"
+}

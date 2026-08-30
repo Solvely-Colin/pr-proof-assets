@@ -1,0 +1,11 @@
+{
+  "openclawHead": "9e7ec1f842a111b79990b10b7e6db9424735cb8a",
+  "parentHead": "eb19e297d4ab35a82dc8b9aeffa0dc5f9ad8c0c6",
+  "runtimeProofHead": "8817e126c4322606668242c0c2f17bb2ec2f7ff1",
+  "runtimeDeltaAfterProof": "mechanical restack and generated i18n inventory only",
+  "nativeI18nEntries": 4406,
+  "nativeI18nDrift": false,
+  "unusedExportGuard": "passed",
+  "localizedSettingsConflictReason": "passed",
+  "genericIosSimulatorBuild": "passed"
+}

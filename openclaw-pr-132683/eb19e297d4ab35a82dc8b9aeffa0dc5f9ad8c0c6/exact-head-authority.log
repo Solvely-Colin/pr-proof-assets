@@ -1,0 +1,406 @@
+[test] starting test/vitest/vitest.auto-reply.config.ts
+
+ RUN  v4.1.11 <openclaw-worktree>
+
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'local session' 34ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'new session' 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'stale ACP key' 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'stored ACP session' 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'ACP command target' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'local command target from ACP source' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > scopes reply hooks to the prepared 'bound ACP reset tail' 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.reply-dispatch-scope.test.ts > dispatchReplyFromConfig reply hook scope > refuses restricted ACP takeover before invoking reply hooks 8ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > records channel transform suppression before TTS or visible fallback delivery 11ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps a block-only channel transform veto terminal 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > lets a later accepted final override an earlier transform veto 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps unauthorized plugin-owned binding slash replies suppressed while routed to the bound plugin 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers plugin-owned binding replies returned by the owning inbound claim hook 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > aborts plugin-bound completion while reply delivery is still settling 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > persists Gateway plugin-bound turns and routed replies in the binding session 24ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > attests observed delivery only when the routed binding turn delivered: 'handled reply route delivers' 16ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > attests observed delivery only when the routed binding turn delivered: 'handled reply route delivers before a…' 13ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > attests observed delivery only when the routed binding turn delivered: 'handled reply route is hook-suppressed' 12ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > attests observed delivery only when the routed binding turn delivered: 'handled reply route fails' 12ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > attests observed delivery only when the routed binding turn delivered: 'declined notice route delivers' 10ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > attests observed delivery only when the routed binding turn delivered: 'declined notice route is hook-suppres…' 16ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > attests observed delivery only when the routed binding turn delivered: 'declined notice route fails' 11ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > attests observed delivery only when the routed binding turn delivered: 'error notice route delivers' 10ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > attests observed delivery only when the routed binding turn delivered: 'error notice route is hook-suppressed' 13ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > attests observed delivery only when the routed binding turn delivered: 'error notice route fails' 12ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > routes plugin-owned Discord DM bindings to the owning plugin before generic inbound claim broadcast 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > falls back to OpenClaw once per startup when a bound plugin is missing 9ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > falls back to OpenClaw when the bound plugin is loaded but has no inbound_claim handler 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > notifies the user when a bound plugin declines the turn and keeps the binding attached 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > notifies the user when a bound plugin errors and keeps raw details out of the reply 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > marks diagnostics skipped for duplicate inbound messages 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps duplicate skip diagnostics inside the active inbound trace 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > releases inbound dedupe when dispatch fails before completion 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > 'poisons inbound dedupe when dispatch …' 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > 'poisons inbound dedupe when dispatch …' 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > applies configOverride as a patch over the runtime config for replyResolver 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps the caller config exact before a runtime snapshot is published 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > does not independently reread the committed runtime config snapshot 7ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps a channel-captured config full when no prepared runtime exists 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > drops a removed Firecrawl SecretRef from Discord replies after config reload 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > suppresses isReasoning payloads from final replies (WhatsApp channel) 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers isReasoning final replies when the channel opts in 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > suppresses isCommentary payloads from final replies by default 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers isCommentary final replies when the channel opts in 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > does not synthesize opted-in final reasoning payloads into TTS media 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > does not synthesize opted-in final commentary payloads into TTS media 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > suppresses isReasoning payloads from block replies (generic dispatch path) 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers opted-in block reasoning payloads without applying TTS 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > suppresses isCommentary payloads from block replies by default 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers opted-in block commentary payloads without applying TTS 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > does not redeliver a final that already settled as an identical block 11ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps the final fallback when an identical block delivery fails 9ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > does not send the final fallback when aborted during block settlement 10ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps final-only TTS media after deduping identical block text 10ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > strips split TTS directives from streamed block text before delivery 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > forwards generated-media block replies in WhatsApp group sessions 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > signals block boundaries after async block delivery is admitted 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > does not wait for same-channel block dispatcher delivery before resolving block replies 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > waits for pending same-channel block delivery before completing block-only dispatch 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > waits for pending same-channel block delivery before forwarding tool progress 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > does not synthesize tool-start capability while ordering item progress 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > forwards payload metadata into onBlockReplyQueued context 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers final-mode Telegram TTS as one captioned voice reply 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers independent durable updates immediately without mixing them into the final Telegram voice reply 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers deferred Telegram text when synthesis produces no audio 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers deferred Telegram text when final synthesis throws 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers deferred Telegram text when media normalization throws 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers deferred Telegram text when generation fails after a block 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers deferred Telegram text when the run aborts and the resolver 'throws' 7ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers deferred Telegram text when the run aborts and the resolver 'returns' 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > delivers deferred Telegram text after an unrelated final status notice 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps Telegram TTS-only directive text out of the voice caption 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps streamed TTS-only text out of a later Telegram final caption 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps a cross-boundary TTS-only region out of the Telegram caption 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps distinct streamed and final text in the caption 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps tagged-mode Telegram block text visible 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps tagged TTS delivery single for '[[tts:text]]Private speech.[[/tts:tex…' 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps tagged TTS delivery single for '[[tts:text]]Private speech.[[/tts:tex…' 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > keeps tagged TTS delivery single for 'Visible answer. [[tts:text]]Private s…' 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > dispatchReplyFromConfig > skips fallback when directives stay visible 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > before_dispatch hook > skips model dispatch when hook returns handled 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > before_dispatch hook > skips claiming hooks when admitted session settings are restrictive 7ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > before_dispatch hook > silently short-circuits when hook returns handled without text 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > before_dispatch hook > does not start the reply lifecycle when before_dispatch silently handles the turn 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > before_dispatch hook > uses canonical hook metadata and shared routed final delivery 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > before_dispatch hook > passes canonical requester lineage to the before_dispatch runner 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > before_dispatch hook > passes inbound reply metadata to before_dispatch event and context 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > before_dispatch hook > suppresses before_dispatch handled reply when sendPolicy is deny 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > before_dispatch hook > continues default dispatch when hook returns not handled 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > still calls the replyResolver when sendPolicy is deny 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > passes suppressUserDelivery to tail reply_dispatch when sendPolicy is deny 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > suppresses final reply delivery when sendPolicy is deny 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps the suppressed reply log preview UTF-16 safe 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not mark allowed group silence eligible for no-visible fallback 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > records explicit NO_REPLY without a generic fallback in 'direct turns' 7ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > records explicit NO_REPLY without a generic fallback in 'mentioned group turns' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not infer terminal silence from a sibling NO_REPLY payload 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > reports queue-cap rejection instead of a temporary model failure 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not report a pending continuation as an empty terminal reply 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers core no-visible-reply fallback for disallowed empty mentioned group turns 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps ambient group turns silent even when silence policy is disallow 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > reports an active-run accepted turn as deferred instead of empty 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps room_event turns silent even when silence policy is disallow 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps room_event turns silent even when they carry a mention 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers fallback for mentioned group turns even when group silence is allowed 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps ambient group turns silent under the default group policy 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not deliver no-visible fallback when silentReply allows empty finals 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not deliver no-visible fallback when sendPolicy is deny 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not deliver no-visible fallback under message_tool_only source delivery 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not deliver no-visible fallback after observed reply delivery 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers routed fallback when routing drops an empty final without sending 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps eligibility when an empty routed final precedes a suppressed fallback 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not report a hook-suppressed routed fallback as delivered 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not deliver no-visible fallback after a routed media-only block 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not deliver no-visible fallback after streamed blocks invisible to dispatcher counts 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not duplicate a final accepted by a legacy dispatcher 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not infer receipt visibility from a custom dispatcher's queued block 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps no-visible fallback eligible when core fallback delivery fails 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers routed fallback when a suppressed contentful final settles invisible 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers fallback when a queued streamed block is cancelled before delivery 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps eligibility when a beforeDeliver hook cancels the queued fallback 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers fallback when a beforeDeliver hook cancels the model final 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > suppresses tool result delivery when sendPolicy is deny 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > suppresses block reply delivery when sendPolicy is deny 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers replies normally when sendPolicy is allow 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers provider conversation-state runner payloads as outbound channel replies 7ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers replies normally when sendPolicy is unset (defaults to allow) 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > suppresses the fast-abort reply under sendPolicy deny 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers the fast-abort reply normally when sendPolicy is allow (regression guard) 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > rejects archived plugin-bound work before the plugin handler runs 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > restores admitted archived channel work before reply-operation admission: 'no placement' 2ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > restores admitted archived channel work before reply-operation admission: 'active placement' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > restores admitted archived channel work before reply-operation admission: 'owning Gateway proves failed environm…' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not auto-restore an archived restart-recovery tombstone 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not add a lifecycle parent lookup for an ordinary healthy threaded turn 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > admits a human parent-fork replacement without reopening its restart tombstone 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps a restart tombstone terminal for a 'room event' parent-fork turn 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps a restart tombstone terminal for a 'system event' parent-fork turn 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > gates hard reset admission without pre-unarchiving the tombstone: 'ordinary channel-authorized reset' 10ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > gates hard reset admission without pre-unarchiving the tombstone: 'channel-admitted non-owner reset' 11ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > gates hard reset admission without pre-unarchiving the tombstone: 'explicit command denial remains autho…' 2ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > admits an authorized native reset only when it owns the tombstoned source 9ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > skips plugin-bound claim hook under deny and falls through to suppressed agent dispatch 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > routes plugin-owned bindings under message-tool-only source delivery: 'handled without a plugin reply' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > routes plugin-owned bindings under message-tool-only source delivery: 'handled with a plugin reply' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > routes plugin-owned bindings under message-tool-only source delivery: 'suppresses ambient room_event plugin …' 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps unmentioned plugin-bound fallback from ordinary group agent dispatch 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'dispatches unmentioned plugin-bound f…' 456ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'suppresses unmentioned fallback when …' 135ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > lets authorized control commands without CommandSource escape plugin-bound fallback 2ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps unauthorized native commands on the plugin-bound claim path 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps structured normal command turns on the plugin-bound claim path 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps message-tool-only source delivery private while still processing the turn 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > treats message-tool-only observed delivery as visible for fallback eligibility 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > preserves hook-blocked metadata when source delivery is message-tool-only 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers fast auto progress in message-tool-only mode without verbose progress 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > suppresses fast auto progress for room-event message-tool-only turns 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > suppresses fast auto progress when sendPolicy is deny 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > forwards fast auto progress callbacks without separate message delivery 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > lets the channel own forced tool progress at verbosity off 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps forced 'media' durable when channel progress is available 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps forced 'captioned media' durable when channel progress is available 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps forced 'exec approvals' durable when channel progress is available 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps forced 'unavailable exec approvals' durable when channel progress is available 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps forced 'ask-user prompts' durable when channel progress is available 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers forced tool progress in message-tool-only mode without verbose progress 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers verbose tool progress in message-tool-only mode 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers marked runtime failure notices in message-tool-only mode 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'suppresses marked runtime failure not…' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'delivers marked explicit command term…' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'delivers marked /compact reply in roo…' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'delivers marked status blocks in dire…' 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'suppresses marked status blocks for a…' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'delivers marked status blocks for exp…' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'suppresses marked status blocks when …' 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers 'gateway-backed choice' harness questions in direct message-tool-only turns 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > delivers 'plain secret' harness questions in direct message-tool-only turns 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'permits' authorized durable harness updates in message-tool-only turns 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'rejects' authorized durable harness updates in message-tool-only turns 3ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'rejects ambient room events for' authorized durable harness updates in message-tool-only turns 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps hook-cancelled marked blocks out of delivery and queued callbacks 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > mirrors internal source reply payloads into the active transcript 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > mirrors post-hook internal source reply payloads into the active transcript 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > lets a queued same-session turn finish before mirroring delivered source replies 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not mirror internal source replies cancelled by dispatcher hooks 6ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps internal source reply metadata on TTS-cloned final payloads 5ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > does not deliver marked runtime failure notices when sendPolicy denies delivery 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'keeps opted-in group/channel final re…' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'keeps same-provider group/channel fin…' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'keeps ambient room-event group/channe…' 0ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'delivers internal WebChat room-event …' 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'preserves configured message-tool del…' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'keeps default direct source delivery …' 4ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'keeps Codex direct source delivery me…' 177ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'keeps locked supervised Codex deliver…' 120ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'uses Codex direct source delivery def…' 97ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'uses channel model overrides before C…' 163ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'uses channel model overrides before c…' 108ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'uses configured defaults before cache…' 104ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'lets config restore automatic Codex d…' 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'honors model overrides before cached …' 105ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'honors heartbeat model overrides befo…' 102ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > 'preserves non-Codex harness direct so…' 94ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > records a rejected source delivery after a runtime-derived fallback 96ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > honors parent model overrides before Codex direct source delivery defaults 110ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > falls back to automatic group/channel delivery when the message tool is unavailable 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > falls back to automatic group/channel delivery when group tools remove the message tool 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > falls back when a channel precomputed message-tool-only delivery but the message tool is unavailable 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps native command replies visible in group/channel events 1ms
+ ✓ |auto-reply| src/auto-reply/reply/dispatch-from-config.delivery.test.ts > sendPolicy deny — suppress delivery, not processing (#53328) > keeps default group/channel source delivery automatic 1ms
+
+ Test Files  2 passed (2)
+      Tests  210 passed (210)
+   Start at  12:22:06
+   Duration  9.02s (transform 3.76s, setup 265ms, import 1.94s, tests 6.68s, environment 0ms)
+
+[test] passed 1 Vitest shard in 11.34s
+Building for debugging...
+[Computing dependencies]
+[Pre-planning 1 / 598]
+[Planning deferred tasks]
+[1 / 5]
+[3 / 9] CAtomic
+[6 / 7] OpenClawKitTests-product
+Build complete! (1.01 sec)
+◇ Test run started.
+↳ Testing Library Version: 2070
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite ChatReplyQuoteTests started.
+◇ Suite ChatComposerStateTests started.
+◇ Test "reply capture and preview truncate without splitting surrogate pair" started.
+◇ Test "attachment only reply matches web empty prompt suffix" started.
+◇ Test "single line quote matches web fixture and escapes attribution" started.
+◇ Test "multiline quote prefixes every line including blanks" started.
+◇ Test "session switch clears reply target and history navigation is session scoped" started.
+◇ Test "user recall advances composer revision" started.
+◇ Test "session switch preserves draft beneath recall and resets recall mode" started.
+◇ Test "file picker allows images and movie containers only" started.
+◇ Test "active recall walks past multiline item regardless of caret line" started.
+◇ Test "slash send ignores and preserves reply target" started.
+◇ Test "tagless movie metadata stages as video" started.
+◇ Test "model selection matches qualified choices after gateway readback" started.
+◇ Test "session switch stashes and restores drafts" started.
+◇ Test "accepted attachment only send quotes and clears reply" started.
+◇ Test "late send does not consume newer reply selection for same message" started.
+◇ Test "attachment staging blocks UI and programmatic sends" started.
+◇ Test "accepted normal send quotes and clears reply and stored draft" started.
+✔ Test "attachment only reply matches web empty prompt suffix" passed after 0.001 seconds.
+✔ Test "reply capture and preview truncate without splitting surrogate pair" passed after 0.001 seconds.
+✔ Test "single line quote matches web fixture and escapes attribution" passed after 0.001 seconds.
+✔ Test "multiline quote prefixes every line including blanks" passed after 0.001 seconds.
+✔ Suite ChatReplyQuoteTests passed after 0.001 seconds.
+✔ Test "session switch clears reply target and history navigation is session scoped" passed after 0.008 seconds.
+✔ Test "active recall walks past multiline item regardless of caret line" passed after 0.008 seconds.
+✔ Test "session switch preserves draft beneath recall and resets recall mode" passed after 0.008 seconds.
+✔ Test "model selection matches qualified choices after gateway readback" passed after 0.009 seconds.
+✔ Test "file picker allows images and movie containers only" passed after 0.009 seconds.
+✔ Test "session switch stashes and restores drafts" passed after 0.009 seconds.
+✔ Test "late send does not consume newer reply selection for same message" passed after 0.009 seconds.
+✔ Test "user recall advances composer revision" passed after 0.010 seconds.
+✔ Test "slash send ignores and preserves reply target" passed after 0.016 seconds.
+✔ Test "accepted attachment only send quotes and clears reply" passed after 0.016 seconds.
+✔ Test "accepted normal send quotes and clears reply and stored draft" passed after 0.016 seconds.
+✔ Test "tagless movie metadata stages as video" passed after 0.020 seconds.
+✔ Test "attachment staging blocks UI and programmatic sends" passed after 0.020 seconds.
+✔ Suite ChatComposerStateTests passed after 0.020 seconds.
+✔ Test run with 17 tests in 2 suites passed after 0.020 seconds.
+Building for debugging...
+[Computing dependencies]
+[Pre-planning 1 / 598]
+[Planning deferred tasks]
+[1 / 5]
+[6 / 11] OpenClawNativeStateTests-product
+Build complete! (0.96 sec)
+◇ Test run started.
+↳ Testing Library Version: 2070
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite ChatTranscriptCacheStoreTests started.
+◇ Suite ChatCommandOutboxStoreTests started.
+◇ Suite ClientDatabaseLegacyImportTests started.
+◇ Test "agent session owner partitions remain bounded" started.
+◇ Test "concurrent canonical merges do not lose messages" started.
+◇ Test "unknown registry preserves a cancelable staged removal" started.
+◇ Test "parked accepted rows mint retry identity while queued rows keep it" started.
+◇ Test "hash only scrub marker remains recoverable" started.
+◇ Test "commit started recovery finishes even while gateway remains registered" started.
+◇ Test "canonical cache excludes optimistic outbox rows" started.
+◇ Test "full removal deletes both databases legacy files and sidecars" started.
+◇ Test "nonancestral parking gives failed uncertain rows a fresh retry identity" started.
+◇ Test "agent snapshot discards legacy roster without touching transcripts" started.
+◇ Test "transcripts are scoped by gateway and agent in one cache" started.
+◇ Test "cache projection strips payloads and keeps bounded diffs" started.
+◇ Test "canonical merge preserves newer cache rows" started.
+◇ Test "staged gateway removal uses exact registry identifier bytes" started.
+◇ Test "parked accepted attachment follows the fresh retry identity" started.
+◇ Test "corrupt cache rebuilds while corrupt client state is preserved" started.
+◇ Test "legacy null settings row cannot claim or retry without current client authorization" started.
+◇ Test "gateway removal scrubs its payloads from shared database files" started.
+◇ Test "cache bounds sessions messages and transcript partitions" started.
+◇ Test "empty or rejected agent snapshot cannot erase another roster" started.
+◇ Test "malformed cache partitions are discarded atomically" started.
+◇ Test "cancelable stage does not suppress legacy state import" started.
+◇ Test "canceling a repeated forget preserves the finalized tombstone" started.
+◇ Test "nil agent rows use the canonical empty scope owner" started.
+◇ Test "queue and attachment budgets are gateway scoped" started.
+◇ Test "canonical proof wins a cancellation race" started.
+◇ Test "cache format mismatch rebuilds without touching client state" started.
+◇ Test "bulk branch parking invalidates sibling subscribers" started.
+◇ Test "retry adopts a fresh verified route" started.
+◇ Test "agent session snapshots preserve another agents offline roster" started.
+◇ Test "one broken pending removal does not block another gateway" started.
+◇ Test "stale queued and acknowledged commands require user action" started.
+◇ Test "pre v7 upgrade reopens and fences a settings bound retry" started.
+◇ Test "empty transcript deletes its partition" started.
+◇ Test "canceled optimistic row cannot reenter cache from a stale snapshot" started.
+◇ Test "empty root reconcile permits first row and parks a wiped scope" started.
+◇ Test "interrupted sends fail closed once" started.
+◇ Test "cancellation stops only unclaimed client state" started.
+◇ Test "pending removal marker gates writable facade recreation" started.
+◇ Test "claims are insertion FIFO when timestamps tie and exclusive" started.
+◇ Test "one installation owns exactly the two named databases" started.
+◇ Test "retiring a store ends only its forwarded change streams" started.
+◇ Test "gateway removal deletes only that gateways cache and state" started.
+◇ Test "staged gateway removal reconciles against the pairing registry" started.
+◇ Test "retired facade cannot recover a replacement facades sends" started.
+◇ Test "commands and attachment blobs round trip in order" started.
+◇ Test "session settings expectation survives a cold outbox reopen" started.
+◇ Test "routing identity survives a cold container reopen" started.
+◇ Test "transcript and sessions round trip as row JSON" started.
+◇ Test "forgotten gateway is never resurrected by a late legacy import" started.
+◇ Test "legacy v1 cache is discarded" started.
+◇ Test "legacy v6 imports attachments and routing identity" started.
+◇ Test "forget removes an unreadable per gateway legacy database and sidecars" started.
+◇ Test "legacy import accepts only gateways in the pairing registry" started.
+◇ Test "preserved shared legacy database blocks targeted forget" started.
+◇ Test "unknown or corrupt legacy files remain untouched" started.
+◇ Test "legacy import uses exact registry identifier bytes" started.
+◇ Test "foreground retry imports a legacy database discovered after startup" started.
+◇ Test "legacy v2 outbox imports parked into client state" started.
+✔ Test "cache projection strips payloads and keeps bounded diffs" passed after 0.119 seconds.
+✔ Test "pending removal marker gates writable facade recreation" passed after 0.158 seconds.
+✔ Test "full removal deletes both databases legacy files and sidecars" passed after 0.161 seconds.
+✔ Test "one installation owns exactly the two named databases" passed after 0.161 seconds.
+✔ Test "cancelable stage does not suppress legacy state import" passed after 0.174 seconds.
+✔ Test "corrupt cache rebuilds while corrupt client state is preserved" passed after 0.185 seconds.
+✔ Test "hash only scrub marker remains recoverable" passed after 0.203 seconds.
+✔ Test "legacy null settings row cannot claim or retry without current client authorization" passed after 0.205 seconds.
+✔ Test "canceling a repeated forget preserves the finalized tombstone" passed after 0.225 seconds.
+✔ Test "legacy v1 cache is discarded" passed after 0.175 seconds.
+✔ Test "legacy v6 imports attachments and routing identity" passed after 0.176 seconds.
+✔ Test "forget removes an unreadable per gateway legacy database and sidecars" passed after 0.193 seconds.
+✔ Test "unknown registry preserves a cancelable staged removal" passed after 0.275 seconds.
+✔ Test "canonical merge preserves newer cache rows" passed after 0.275 seconds.
+✔ Test "legacy import uses exact registry identifier bytes" passed after 0.249 seconds.
+✔ Test "staged gateway removal uses exact registry identifier bytes" passed after 0.324 seconds.
+✔ Test "routing identity survives a cold container reopen" passed after 0.373 seconds.
+✔ Test "canonical proof wins a cancellation race" passed after 0.374 seconds.
+✔ Test "preserved shared legacy database blocks targeted forget" passed after 0.313 seconds.
+✔ Test "session settings expectation survives a cold outbox reopen" passed after 0.387 seconds.
+✔ Test "retired facade cannot recover a replacement facades sends" passed after 0.387 seconds.
+✔ Test "legacy import accepts only gateways in the pairing registry" passed after 0.319 seconds.
+✔ Test "canceled optimistic row cannot reenter cache from a stale snapshot" passed after 0.387 seconds.
+✔ Test "empty transcript deletes its partition" passed after 0.388 seconds.
+✔ Test "legacy v2 outbox imports parked into client state" passed after 0.334 seconds.
+✔ Test "concurrent canonical merges do not lose messages" passed after 0.423 seconds.
+✔ Test "retry adopts a fresh verified route" passed after 0.423 seconds.
+✔ Test "agent snapshot discards legacy roster without touching transcripts" passed after 0.424 seconds.
+✔ Test "interrupted sends fail closed once" passed after 0.423 seconds.
+✔ Test "nil agent rows use the canonical empty scope owner" passed after 0.423 seconds.
+✔ Test "forgotten gateway is never resurrected by a late legacy import" passed after 0.387 seconds.
+✔ Test "gateway removal scrubs its payloads from shared database files" passed after 0.445 seconds.
+✔ Test "commands and attachment blobs round trip in order" passed after 0.445 seconds.
+✔ Test "cache format mismatch rebuilds without touching client state" passed after 0.448 seconds.
+✔ Test "retiring a store ends only its forwarded change streams" passed after 0.447 seconds.
+✔ Test "foreground retry imports a legacy database discovered after startup" passed after 0.390 seconds.
+✔ Test "unknown or corrupt legacy files remain untouched" passed after 0.404 seconds.
+✔ Test "canonical cache excludes optimistic outbox rows" passed after 0.479 seconds.
+✔ Test "agent session snapshots preserve another agents offline roster" passed after 0.479 seconds.
+✔ Test "commit started recovery finishes even while gateway remains registered" passed after 0.479 seconds.
+✔ Test "empty or rejected agent snapshot cannot erase another roster" passed after 0.482 seconds.
+✔ Test "transcripts are scoped by gateway and agent in one cache" passed after 0.482 seconds.
+✔ Suite ClientDatabaseLegacyImportTests passed after 0.482 seconds.
+✔ Test "claims are insertion FIFO when timestamps tie and exclusive" passed after 0.482 seconds.
+✔ Test "transcript and sessions round trip as row JSON" passed after 0.481 seconds.
+✔ Test "stale queued and acknowledged commands require user action" passed after 0.482 seconds.
+✔ Test "nonancestral parking gives failed uncertain rows a fresh retry identity" passed after 0.482 seconds.
+✔ Test "one broken pending removal does not block another gateway" passed after 0.489 seconds.
+✔ Test "cancellation stops only unclaimed client state" passed after 0.491 seconds.
+✔ Test "gateway removal deletes only that gateways cache and state" passed after 0.497 seconds.
+✔ Test "parked accepted attachment follows the fresh retry identity" passed after 0.500 seconds.
+✔ Test "pre v7 upgrade reopens and fences a settings bound retry" passed after 0.500 seconds.
+✔ Test "malformed cache partitions are discarded atomically" passed after 0.504 seconds.
+✔ Test "bulk branch parking invalidates sibling subscribers" passed after 0.504 seconds.
+✔ Test "empty root reconcile permits first row and parks a wiped scope" passed after 0.504 seconds.
+✔ Test "staged gateway removal reconciles against the pairing registry" passed after 0.518 seconds.
+✔ Test "queue and attachment budgets are gateway scoped" passed after 0.523 seconds.
+✔ Test "agent session owner partitions remain bounded" passed after 0.527 seconds.
+✔ Test "parked accepted rows mint retry identity while queued rows keep it" passed after 0.531 seconds.
+✔ Suite ChatCommandOutboxStoreTests passed after 0.531 seconds.
+✔ Test "cache bounds sessions messages and transcript partitions" passed after 0.531 seconds.
+✔ Suite ChatTranscriptCacheStoreTests passed after 0.532 seconds.
+✔ Test run with 59 tests in 3 suites passed after 0.532 seconds.

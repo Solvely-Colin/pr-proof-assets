@@ -1,0 +1,10 @@
+$ node --import ./scripts/tsx.mjs scripts/native-app-i18n.ts verify
+native-app-i18n: entries=4397 changed=false
+android-app-i18n: appSourceKeys=1667 thirdPartySourceKeys=4 wearSourceKeys=122
+apple-app-i18n: sourceMacosKeys=1419
+$ node --import ./scripts/tsx.mjs scripts/check-deadcode-exports.mts
+[deadcode] Knip script unused-export scan passed with 0 entries.
+[deadcode] Knip production unused-export scan passed with 0 entries.
+[deadcode] Knip full-tree unused-export scan passed with 0 entries.
+$ node --import ./scripts/tsx.mjs scripts/generate-sqlite-session-schema-baseline.ts --check
+OK docs/.generated/sqlite-session-transcript-schema-baseline.sha256
