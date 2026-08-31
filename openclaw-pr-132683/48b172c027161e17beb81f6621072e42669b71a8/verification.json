@@ -1,0 +1,25 @@
+{
+  "pr": 132683,
+  "head": "48b172c027161e17beb81f6621072e42669b71a8",
+  "mediaCaptureHead": "878ca8fbfc20db52d1bebb9b2be1105222b75945",
+  "iosTree": "952e7e89e50c491082ec0d964215b166b8fdf76a",
+  "openClawKitTree": "484f542bd2a8a8a411418ff144e5f0e6361151fd",
+  "baseline": "a7be8e5ec6ff9b4169eabe3bf37bb36396ac79ad",
+  "capturedAt": "2026-08-31",
+  "device": "OpenClaw Capture",
+  "runtime": "iOS 27.0 simulator",
+  "uiTest": {
+    "name": "OpenClawSnapshotUITests/testChatComposerStartsCompactAndGrowsWithDraft",
+    "passed": 1,
+    "failed": 0
+  },
+  "focusedTests": {
+    "gatewayChatAdmissionAndSession": 87,
+    "replyDispatchAuthority": 8
+  },
+  "nativeI18nEntries": 4397,
+  "repositoryFormatter": "passed",
+  "autoreviewP0Findings": 0,
+  "iosSimulatorBuild": "passed",
+  "proofFreshness": "Media was captured on 2026-08-31. The final head has byte-identical apps/ios and apps/shared/OpenClawKit trees; only TypeScript import ordering changed afterward."
+}

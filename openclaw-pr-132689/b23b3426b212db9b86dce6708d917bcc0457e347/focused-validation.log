@@ -1,0 +1,1060 @@
+src/gateway/server-methods/chat-send-admission.ts(376,9): error TS2304: Cannot find name 'retryableClaim'.
+[tsgo] FAILED (exit 1)
+[test] starting test/vitest/vitest.gateway.config.ts
+
+ RUN  v4.1.11 /Users/solvely/Projects/ai-agents/openclaw/.worktrees/ios-composer-delivery
+
+[vitest-workers] prepared 6dde14219921 in 6199ms (7256 inputs, 2698 outputs)
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send rejects archived sessions before dispatch 1022ms
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send fences the admitted session settings 271ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send keeps stored settings for legacy callers after the session row broadens 82ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > keeps started chat dispatch on its retained request root 63ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > delivers a queued WebChat reply over the live Gateway WebSocket after its source ends 71ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.'send' accepts an existing session input before reporting its committed history position 146ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.'steer' accepts an existing session input before reporting its committed history position 82ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt drains the captured admission before starting 74ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt releases its admission when backend cancellation throws 81ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt releases its admission when session interruption throws 1091ms
+   → expected 1 to be +0 // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt drains a non-reply session admission before dispatching 81ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt starts normally when the session is idle 80ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.send creates a configured agent main session before sending 202ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.abort stops active dashboard runs 88ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.abort resolves active runs by runId without a caller session key 95ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sanitizes inbound chat.send message text and rejects null bytes 44ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > handles chat send and history flows 88ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send accepts the backing session id returned by chat.history 134ms
+   → expected false to be true // Object.is equality
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history applies the reset kept-tail cut and preserves its marker 101ms
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > marks a running webchat session failed when restart drain overlaps dispatch rejection 8105ms
+   → expected false to be true // Object.is equality
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'structured context-overflow code' over authenticated WebSocket 116ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'provider request-too-large code' over authenticated WebSocket 109ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'provider context-window message' over authenticated WebSocket 108ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'embedded context-overflow message' over authenticated WebSocket 106ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'token-per-minute rate limit' over authenticated WebSocket 107ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history safely displays 'private upstream failure' over authenticated WebSocket 112ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant NO_REPLY-only entries 113ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant control replies in Responses output blocks 116ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history mirrors current-session message tool sends before NO_REPLY 119ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history mirrors message success …' 116ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history mirrors message success …' 116ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history hides suppressed deliver…' 122ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > 'chat.history hides dry-run delivery e…' 121ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history marks message-tool replies held for internal source delivery 125ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides raw delivery-mirror rows but keeps message-tool mirrors 127ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history carries managed images from a message-tool delivery mirror 131ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history binds equal-text delivery mirrors to their message tool calls 134ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not caption-match a populated unmatched delivery ID 138ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history keeps message-tool mirrors before silent completion rows 133ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides delivery mirrors that precede successful tool results 138ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history preserves other pending message-tool mirrors while deduping one send 138ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history keeps standalone delivery-mirror rows 147ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history mirrors current-session message tool sends with channel hints 140ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror explicitly routed message tool sends 143ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history keeps confirmed current-source sends before a later final 146ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror suppressed current-source sends 147ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror message tool sends from unmatched results 152ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history does not mirror dry-run message tool sends 152ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides commentary-only assistant entries 155ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant announce/reply skip-only entries 160ms
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > preserves split fenced-code indentation in chat.send events and history 184ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes chat.send slash commands without agent runs 179ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes /btw replies through side-result events without transcript injection 199ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > preserves split fenced-code indentation in /btw side-result events 185ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes block-streamed /btw replies through side-result events 221ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history persists assistant image data URLs as managed image blocks 85ms
+   → expected false to be true // Object.is equality
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history hides assistant NO_REPLY-only entries and keeps mixed-content assistant entries 348ms
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history uses the owning agent thinkingDefault for non-default agent sessions 417ms
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not persist verboseLevel for operator.write callers 840ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not persist one-turn thinking metadata 317ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not rotate sessions for operator.write reset triggers 536ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait resolves chat.send runs that finish without lifecycle events 251ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores stale chat dedupe when an agent run with the same runId is in flight 518ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > retains the session fixture while admitted dispatch settles after callback return 571ms
+   → expected 0 to be greater than 0
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > retains the session fixture while admitted dispatch settles after callback throw 359ms
+   → expected 0 to be greater than 0
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores stale agent snapshots while same-runId chat.send is active 1204ms
+   → expected false to be true // Object.is equality
+ × |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores lifecycle completion while same-runId chat.send is active 341ms
+   → expected false to be true // Object.is equality
+ ✓ |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent events include sessionKey and agent.wait covers lifecycle flows 547ms
+ ✓ |gateway-methods| ../../src/gateway/server-methods/chat-send-pre-admission.test.ts > chat send stop ownership > keeps the selected filter separate from the compatibility run fallback 39ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 33 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send fences the admitted session settings
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:292:27
+    290|         idempotencyKey: "idem-chat-settings-cas-success",
+    291|       });
+    292|       expect(accepted.ok).toBe(true);
+       |                           ^
+    293|       await waitForAgentRunDrained("idem-chat-settings-cas-success");
+    294|
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:277:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send keeps stored settings for legacy callers after the session row broadens
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:343:27
+    341|         idempotencyKey: "idem-chat-settings-final-freeze",
+    342|       });
+    343|       expect(accepted.ok).toBe(true);
+       |                           ^
+    344|       const admittedOptions = await dispatchEntered.promise;
+    345|
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:319:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > keeps started chat dispatch on its retained request root
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:412:22
+    410|       });
+    411|
+    412|       expect(res.ok).toBe(true);
+       |                      ^
+    413|       expect(res.payload?.status).toBe("started");
+    414|       await waitForFast(() => {
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:365:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > delivers a queued WebChat reply over the live Gateway WebSocket after its source ends
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:450:27
+    448|         idempotencyKey: sourceRunId,
+    449|       });
+    450|       expect(response.ok).toBe(true);
+       |                           ^
+    451|       await waitForFast(() => expect(options?.onQueuedFollowupReplyBat…
+    452|       releaseDispatch.resolve();
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:425:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.'send' accepts an existing session input before reporting its committed history position
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.'steer' accepts an existing session input before reporting its committed history position
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:554:24
+    552|           idempotencyKey: runId,
+    553|         });
+    554|         expect(res.ok).toBe(true);
+       |                        ^
+    555|         expectRecordFields(res.payload, { runId, status: "started" });
+    556|         // The suite's TEST client ACKs before dispatch can commit the…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt drains the captured admission before starting
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:595:25
+    593|         idempotencyKey: "idem-chat-interrupt-old",
+    594|       });
+    595|       expect(active.ok).toBe(true);
+       |                         ^
+    596|       await activeRunStarted.promise;
+    597|
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:579:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt releases its admission when backend cancellation throws
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:631:25
+    629|         idempotencyKey: "idem-chat-interrupt-throw-old",
+    630|       });
+    631|       expect(active.ok).toBe(true);
+       |                         ^
+    632|       await activeRunStarted.promise;
+    633|
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:615:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt releases its admission when session interruption throws
+AssertionError: expected 1 to be +0 // Object.is equality
+
+- Expected
++ Received
+
+- 0
++ 1
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:684:78
+    682|
+    683|         expect(res.ok).toBe(false);
+    684|         await waitForFast(() => expect(getActiveSessionWorkAdmissionCo…
+       |                                                                              ^
+    685|         await waitForFast(() => expect(getActiveGatewayRootWorkCount()…
+    686|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt drains a non-reply session admission before dispatching
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:725:24
+    723|         });
+    724|
+    725|         expect(res.ok).toBe(true);
+       |                        ^
+    726|         expect(onInterrupt).toHaveBeenCalledOnce();
+    727|         expect(res.payload).toMatchObject({
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:696:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send interrupt starts normally when the session is idle
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:749:22
+    747|         idempotencyKey: "idem-chat-interrupt-idle",
+    748|       });
+    749|       expect(res.ok).toBe(true);
+       |                      ^
+    750|       expect(res.payload).toMatchObject({
+    751|         runId: "idem-chat-interrupt-idle",
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:742:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.send creates a configured agent main session before sending
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:774:22
+    772|         idempotencyKey: "idem-sessions-send-orion",
+    773|       });
+    774|       expect(res.ok).toBe(true);
+       |                      ^
+    775|       expect(res.payload?.runId).toBe("idem-sessions-send-orion");
+    776|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.abort stops active dashboard runs
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:810:26
+    808|         timeoutMs: 30_000,
+    809|       });
+    810|       expect(sendRes.ok).toBe(true);
+       |                          ^
+    811|
+    812|       const cancelledEventP = onceMessage(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sessions.abort resolves active runs by runId without a caller session key
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:886:26
+    884|         timeoutMs: 30_000,
+    885|       });
+    886|       expect(sendRes.ok).toBe(true);
+       |                          ^
+    887|
+    888|       const abortRes = await rpcReq(ws, "sessions.abort", {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > sanitizes inbound chat.send message text and rejects null bytes
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:919:29
+    917|       idempotencyKey: "idem-sanitized-1",
+    918|     });
+    919|     expect(sanitizedRes.ok).toBe(true);
+       |                             ^
+    920|     await waitForAgentRunDrained("idem-sanitized-1");
+    921|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > handles chat send and history flows
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:953:29
+    951|         idempotencyKey: "idem-webchat-1",
+    952|       });
+    953|       expect(webchatRes.ok).toBe(true);
+       |                             ^
+    954|       await waitForAgentRunDrained("idem-webchat-1");
+    955|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send accepts the backing session id returned by chat.history
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:1170:26
+    1168|         idempotencyKey: runId,
+    1169|       });
+    1170|       expect(sendRes.ok).toBe(true);
+       |                          ^
+    1171|       expect(sendRes.payload?.status).toBe("started");
+    1172|
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:1155:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[16/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > marks a running webchat session failed when restart drain overlaps dispatch rejection
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:1300:26
+    1298|             idempotencyKey: "idem-dispatch-error-1",
+    1299|           });
+    1300|           expect(res.ok).toBe(true);
+       |                          ^
+    1301|           await waitForFast(() => {
+    1302|             expect(dispatchStarted).toBe(true);
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:1268:30
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:1237:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[17/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > preserves split fenced-code indentation in chat.send events and history
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2127:25
+    2125|         idempotencyKey: "idem-fenced-code-indentation",
+    2126|       });
+    2127|       expect(result.ok).toBe(true);
+       |                         ^
+    2128|       const finalEvent = await finalPromise;
+    2129|       expect(extractFirstTextBlock(finalEvent.payload?.message)).toBe(…
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2093:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[18/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes chat.send slash commands without agent runs
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2157:22
+    2155|         idempotencyKey: "idem-command-1",
+    2156|       });
+    2157|       expect(res.ok).toBe(true);
+       |                      ^
+    2158|       await eventPromise;
+    2159|       expect(spy.mock.calls.length).toBe(callsBefore);
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2140:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[19/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes /btw replies through side-result events without transcript injection
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2221:22
+    2219|       });
+    2220|
+    2221|       expect(res.ok).toBe(true);
+       |                      ^
+    2222|       await waitForFast(() => {
+    2223|         expect(dispatchInboundMessageMock).toHaveBeenCalled();
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2164:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[20/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > preserves split fenced-code indentation in /btw side-result events
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2289:25
+    2287|         idempotencyKey: "idem-btw-fenced-code-indentation",
+    2288|       });
+    2289|       expect(result.ok).toBe(true);
+       |                         ^
+    2290|       expectRecordFields((await sideResultPromise).payload, {
+    2291|         kind: "btw",
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2250:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[21/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > routes block-streamed /btw replies through side-result events
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2352:22
+    2350|       });
+    2351|
+    2352|       expect(res.ok).toBe(true);
+       |                      ^
+    2353|       await waitForFast(() => {
+    2354|         expect(dispatchInboundMessageMock).toHaveBeenCalled();
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2300:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.history persists assistant image data URLs as managed image blocks
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ withMainSessionStore.sessionId ../../src/gateway/server.chat.gateway-server-chat.test.ts:2412:26
+    2410|           });
+    2411|
+    2412|           expect(res.ok).toBe(true);
+       |                          ^
+    2413|           expect(res.payload?.runId).toBe("idem-managed-image-history"…
+    2414|           await finalPromise;
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2367:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[23/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not persist verboseLevel for operator.write callers
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2553:30
+    2551|             idempotencyKey: "idem-write-scope-verbose-no-persist",
+    2552|           });
+    2553|           expect(sendRes.ok).toBe(true);
+       |                              ^
+    2554|
+    2555|           const waitRes = await rpcReq(scopedWs, "agent.wait", {
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2535:7
+ ❯ withGatewayServer ../../src/gateway/test-helpers.server.ts:826:12
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2534:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[24/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not persist one-turn thinking metadata
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2585:26
+    2583|         idempotencyKey: "idem-chat-thinking-no-persist",
+    2584|       });
+    2585|       expect(sendRes.ok).toBe(true);
+       |                          ^
+    2586|
+    2587|       const waitRes = await rpcReq(ws, "agent.wait", {
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2578:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[25/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > chat.send does not rotate sessions for operator.write reset triggers
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2628:30
+    2626|             idempotencyKey: "idem-write-scope-reset-no-rotate",
+    2627|           });
+    2628|           expect(sendRes.ok).toBe(true);
+       |                              ^
+    2629|
+    2630|           const waitRes = await rpcReq(scopedWs, "agent.wait", {
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2610:7
+ ❯ withGatewayServer ../../src/gateway/test-helpers.server.ts:826:12
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2609:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[26/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait resolves chat.send runs that finish without lifecycle events
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ sendChatAndExpectStarted ../../src/gateway/server.chat.gateway-server-chat.test.ts:251:20
+    249|       idempotencyKey: runId,
+    250|     });
+    251|     expect(res.ok).toBe(true);
+       |                    ^
+    252|     expect(res.payload?.status).toBe("started");
+    253|     return res;
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2655:7
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2653:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[27/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores stale chat dedupe when an agent run with the same runId is in flight
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ sendChatAndExpectStarted ../../src/gateway/server.chat.gateway-server-chat.test.ts:251:20
+    249|       idempotencyKey: runId,
+    250|     });
+    251|     expect(res.ok).toBe(true);
+       |                    ^
+    252|     expect(res.payload?.status).toBe("started");
+    253|     return res;
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2684:7
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[28/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > retains the session fixture while admitted dispatch settles after callback return
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > retains the session fixture while admitted dispatch settles after callback throw
+AssertionError: expected 0 to be greater than 0
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2746:49
+    2744|           setImmediate(resolve);
+    2745|         });
+    2746|         expect(getActiveGatewayRootWorkCount()).toBeGreaterThan(0);
+       |                                                 ^
+    2747|         expect(testState.sessionStorePath).toBe(storePath);
+    2748|         expect((await fs.stat(fixtureDir)).isDirectory()).toBe(true);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[29/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores stale agent snapshots while same-runId chat.send is active
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ sendChatAndExpectStarted ../../src/gateway/server.chat.gateway-server-chat.test.ts:251:20
+    249|       idempotencyKey: runId,
+    250|     });
+    251|     expect(res.ok).toBe(true);
+       |                    ^
+    252|     expect(res.payload?.status).toBe("started");
+    253|     return res;
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2785:9
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2765:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[30/33]⎯
+
+ FAIL  |gateway-server| ../../src/gateway/server.chat.gateway-server-chat.test.ts > gateway server chat > agent.wait ignores lifecycle completion while same-runId chat.send is active
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ sendChatAndExpectStarted ../../src/gateway/server.chat.gateway-server-chat.test.ts:251:20
+    249|       idempotencyKey: runId,
+    250|     });
+    251|     expect(res.ok).toBe(true);
+       |                    ^
+    252|     expect(res.payload?.status).toBe("started");
+    253|     return res;
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2829:9
+ ❯ withMainSessionStore ../../src/gateway/server.chat.gateway-server-chat.test.ts:191:14
+ ❯ ../../src/gateway/server.chat.gateway-server-chat.test.ts:2801:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[31/33]⎯
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 9 unhandled errors during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+Error: timeout
+ ❯ Timeout.<anonymous> src/gateway/test-helpers.server.ts:706:14
+ ❯ listOnTimeout node:internal/timers:685:17
+ ❯ processTimers node:internal/timers:618:7
+
+This error originated in "src/gateway/server.chat.gateway-server-chat.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "marks a running webchat session failed when restart drain overlaps dispatch rejection". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+Error: timeout
+ ❯ Timeout.<anonymous> src/gateway/test-helpers.server.ts:706:14
+ ❯ listOnTimeout node:internal/timers:685:17
+ ❯ processTimers node:internal/timers:618:7
+
+This error originated in "src/gateway/server.chat.gateway-server-chat.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "marks a running webchat session failed when restart drain overlaps dispatch rejection". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+Error: closed 1012: service restart
+ ❯ WebSocket.closeHandler src/gateway/test-helpers.server.ts:695:14
+ ❯ WebSocket.wrapper node:events:639:12
+ ❯ WebSocket.emit node:events:526:24
+ ❯ WebSocket.emitClose ../../node_modules/ws/lib/websocket.js:279:10
+ ❯ Socket.socketOnClose ../../node_modules/ws/lib/websocket.js:1360:15
+ ❯ Socket.emit node:events:514:20
+ ❯ TCP.<anonymous> node:net:362:12
+
+This error originated in "src/gateway/server.chat.gateway-server-chat.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+Error: closed 1012: service restart
+ ❯ WebSocket.closeHandler src/gateway/test-helpers.server.ts:695:14
+ ❯ WebSocket.wrapper node:events:639:12
+ ❯ WebSocket.emit node:events:526:24
+ ❯ WebSocket.emitClose ../../node_modules/ws/lib/websocket.js:279:10
+ ❯ Socket.socketOnClose ../../node_modules/ws/lib/websocket.js:1360:15
+ ❯ Socket.emit node:events:514:20
+ ❯ TCP.<anonymous> node:net:362:12
+
+This error originated in "src/gateway/server.chat.gateway-server-chat.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+Error: closed 1012: service restart
+ ❯ WebSocket.closeHandler src/gateway/test-helpers.server.ts:695:14
+ ❯ WebSocket.wrapper node:events:639:12
+ ❯ WebSocket.emit node:events:526:24
+ ❯ WebSocket.emitClose ../../node_modules/ws/lib/websocket.js:279:10
+ ❯ Socket.socketOnClose ../../node_modules/ws/lib/websocket.js:1360:15
+ ❯ Socket.emit node:events:514:20
+ ❯ TCP.<anonymous> node:net:362:12
+
+This error originated in "src/gateway/server.chat.gateway-server-chat.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+Error: closed 1012: service restart
+ ❯ WebSocket.closeHandler src/gateway/test-helpers.server.ts:695:14
+ ❯ WebSocket.wrapper node:events:639:12
+ ❯ WebSocket.emit node:events:526:24
+ ❯ WebSocket.emitClose ../../node_modules/ws/lib/websocket.js:279:10
+ ❯ Socket.socketOnClose ../../node_modules/ws/lib/websocket.js:1360:15
+ ❯ Socket.emit node:events:514:20
+ ❯ TCP.<anonymous> node:net:362:12
+
+This error originated in "src/gateway/server.chat.gateway-server-chat.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+Error: closed 1012: service restart
+ ❯ WebSocket.closeHandler src/gateway/test-helpers.server.ts:695:14
+ ❯ WebSocket.wrapper node:events:639:12
+ ❯ WebSocket.emit node:events:526:24
+ ❯ WebSocket.emitClose ../../node_modules/ws/lib/websocket.js:279:10
+ ❯ Socket.socketOnClose ../../node_modules/ws/lib/websocket.js:1360:15
+ ❯ Socket.emit node:events:514:20
+ ❯ TCP.<anonymous> node:net:362:12
+
+This error originated in "src/gateway/server.chat.gateway-server-chat.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+Error: closed 1012: service restart
+ ❯ WebSocket.closeHandler src/gateway/test-helpers.server.ts:695:14
+ ❯ WebSocket.wrapper node:events:639:12
+ ❯ WebSocket.emit node:events:526:24
+ ❯ WebSocket.emitClose ../../node_modules/ws/lib/websocket.js:279:10
+ ❯ Socket.socketOnClose ../../node_modules/ws/lib/websocket.js:1360:15
+ ❯ Socket.emit node:events:514:20
+ ❯ TCP.<anonymous> node:net:362:12
+
+This error originated in "src/gateway/server.chat.gateway-server-chat.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+Error: closed 1012: service restart
+ ❯ WebSocket.closeHandler src/gateway/test-helpers.server.ts:695:14
+ ❯ WebSocket.wrapper node:events:639:12
+ ❯ WebSocket.emit node:events:526:24
+ ❯ WebSocket.emitClose ../../node_modules/ws/lib/websocket.js:279:10
+ ❯ Socket.socketOnClose ../../node_modules/ws/lib/websocket.js:1360:15
+ ❯ Socket.emit node:events:514:20
+ ❯ TCP.<anonymous> node:net:362:12
+
+This error originated in "src/gateway/server.chat.gateway-server-chat.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  33 failed | 36 passed (69)
+     Errors  9 errors
+   Start at  08:45:07
+   Duration  53.55s (transform 34.48s, setup 657ms, import 18.51s, tests 32.81s, environment 0ms)
+
+[vitest] UNHANDLED ERRORS (9): src/gateway/server.chat.gateway-server-chat.test.ts — Error: timeout
+[test] failed 1 Vitest shard in 57.31s
+[test] FAILED (exit 1)
+[vitest] FAILED (exit 1)
+[test] FAILED (exit 1)
+Building for debugging...
+[Computing dependencies]
+[Constructing description]
+[Pre-planning 1 / 598]
+[Planning deferred tasks]
+[1 / 5]
+[2 / 6] OpenClawProtocol
+[3 / 7] OpenClawProtocol
+[8 / 12] OpenClawKit
+[9 / 13] OpenClawKit
+[14 / 18] OpenClawChatUI
+[15 / 19] OpenClawChatUI
+[23 / 30] OpenClawProtocol
+[26 / 33] OpenClawProtocol
+[28 / 34] OpenClawProtocol
+[38 / 45] OpenClawKit
+[40 / 48] OpenClawChatUI
+[50 / 57] OpenClawChatUI
+[52 / 58] OpenClawChatUI
+[54 / 57] OpenClawKitTests-product
+[65 / 68] OpenClawKitTests-product
+/Users/solvely/Projects/ai-agents/openclaw/.worktrees/ios-composer-delivery/apps/shared/OpenClawKit/Tests/OpenClawKitTests/ChatViewModelSessionActionTests.swift:1067:28: warning: expression of type 'Bool' is unused [#NoUsage]
+1065 |         #expect(viewModel.sessionBranches == newBranches)
+1066 |         firstGate.release()
+1067 |         await firstRefresh.value
+     |                            `- warning: expression of type 'Bool' is unused [#NoUsage]
+1068 | 
+1069 |         #expect(viewModel.sessionBranches == newBranches)
+
+[#NoUsage]: <https://docs.swift.org/compiler/documentation/diagnostics/no-usage>
+[71 / 73] OpenClawKitTests-product
+[73 / 73] OpenClawKitTests-product
+[78 / 78] OpenClawKit-product
+Build complete! (93.40 sec)
+◇ Test run started.
+↳ Testing Library Version: 2070
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite ChatViewModelOutboxSettingsTests started.
+◇ Test "route lease rejects settings-bound send when CAS is unavailable" started.
+✔ Test "route lease rejects settings-bound send when CAS is unavailable" passed after 0.001 seconds.
+✔ Suite ChatViewModelOutboxSettingsTests passed after 0.001 seconds.
+✔ Test run with 1 test in 1 suite passed after 0.001 seconds.
+Building for debugging...
+[Computing dependencies]
+[Pre-planning 1 / 598]
+[Planning deferred tasks]
+[1 / 5]
+[8 / 9] OpenClawNativeStateTests-product
+Build complete! (0.98 sec)
+◇ Test run started.
+↳ Testing Library Version: 2070
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite ChatCommandOutboxStoreTests started.
+◇ Suite ClientDatabaseLegacyImportTests started.
+◇ Suite ChatTranscriptCacheStoreTests started.
+◇ Test "legacy null settings row cannot claim or retry without current client authorization" started.
+◇ Test "unknown or corrupt legacy files remain untouched" started.
+◇ Test "structured retry preserves its owner and rejects an old unstructured update" started.
+◇ Test "session settings expectation survives a cold outbox reopen" started.
+◇ Test "legacy import accepts only gateways in the pairing registry" started.
+◇ Test "forget removes an unreadable per gateway legacy database and sidecars" started.
+◇ Test "canonical proof wins a cancellation race" started.
+◇ Test "foreground retry imports a legacy database discovered after startup" started.
+◇ Test "nonancestral parking gives failed uncertain rows a fresh retry identity" started.
+◇ Test "parked accepted rows mint retry identity while queued rows keep it" started.
+◇ Test "queue and attachment budgets are gateway scoped" started.
+◇ Test "commands and attachment blobs round trip in order" started.
+◇ Test "parked accepted attachment follows the fresh retry identity" started.
+◇ Test "preserved shared legacy database blocks targeted forget" started.
+◇ Test "retired facade cannot recover a replacement facades sends" started.
+◇ Test "stale queued and acknowledged commands require user action" started.
+◇ Test "legacy v1 cache is discarded" started.
+◇ Test "legacy import uses exact registry identifier bytes" started.
+◇ Test "empty root reconcile permits first row and parks a wiped scope" started.
+◇ Test "legacy v2 outbox imports parked into client state" started.
+◇ Test "claims are insertion FIFO when timestamps tie and exclusive" started.
+◇ Test "forgotten gateway is never resurrected by a late legacy import" started.
+◇ Test "one broken pending removal does not block another gateway" started.
+◇ Test "pre v7 upgrade reopens and fences a settings bound retry" started.
+◇ Test "structured send context survives a cold database reopen" started.
+◇ Test "legacy v6 imports attachments and routing identity" started.
+◇ Test "cache projection strips payloads and keeps bounded diffs" started.
+◇ Test "nil agent rows use the canonical empty scope owner" started.
+◇ Test "agent session snapshots preserve another agents offline roster" started.
+◇ Test "retiring a store ends only its forwarded change streams" started.
+◇ Test "bulk branch parking invalidates sibling subscribers" started.
+◇ Test "gateway removal deletes only that gateways cache and state" started.
+◇ Test "interrupted sends fail closed once" started.
+◇ Test "retry adopts a fresh verified route" started.
+◇ Test "hash only scrub marker remains recoverable" started.
+◇ Test "transcript and sessions round trip as row JSON" started.
+◇ Test "empty transcript deletes its partition" started.
+◇ Test "malformed cache partitions are discarded atomically" started.
+◇ Test "canonical cache excludes optimistic outbox rows" started.
+◇ Test "empty or rejected agent snapshot cannot erase another roster" started.
+◇ Test "canceled optimistic row cannot reenter cache from a stale snapshot" started.
+◇ Test "commit started recovery finishes even while gateway remains registered" started.
+◇ Test "routing identity survives a cold container reopen" started.
+◇ Test "one installation owns exactly the two named databases" started.
+◇ Test "older client claim parks structured row for a current-client reopen" started.
+◇ Test "pending removal marker gates writable facade recreation" started.
+◇ Test "staged gateway removal reconciles against the pairing registry" started.
+◇ Test "cancellation stops only unclaimed client state" started.
+◇ Test "cancelable stage does not suppress legacy state import" started.
+◇ Test "cache format mismatch rebuilds without touching client state" started.
+◇ Test "agent snapshot discards legacy roster without touching transcripts" started.
+◇ Test "concurrent canonical merges do not lose messages" started.
+◇ Test "canceling a repeated forget preserves the finalized tombstone" started.
+◇ Test "agent session owner partitions remain bounded" started.
+◇ Test "canonical merge preserves newer cache rows" started.
+◇ Test "corrupt cache rebuilds while corrupt client state is preserved" started.
+◇ Test "full removal deletes both databases legacy files and sidecars" started.
+◇ Test "staged gateway removal uses exact registry identifier bytes" started.
+◇ Test "transcripts are scoped by gateway and agent in one cache" started.
+◇ Test "cache bounds sessions messages and transcript partitions" started.
+◇ Test "unknown registry preserves a cancelable staged removal" started.
+◇ Test "gateway removal scrubs its payloads from shared database files" started.
+✔ Test "forget removes an unreadable per gateway legacy database and sidecars" passed after 0.168 seconds.
+✔ Test "cache projection strips payloads and keeps bounded diffs" passed after 0.181 seconds.
+✔ Test "one installation owns exactly the two named databases" passed after 0.185 seconds.
+✔ Test "pending removal marker gates writable facade recreation" passed after 0.188 seconds.
+✔ Test "foreground retry imports a legacy database discovered after startup" passed after 0.197 seconds.
+✔ Test "legacy v1 cache is discarded" passed after 0.201 seconds.
+✔ Test "unknown or corrupt legacy files remain untouched" passed after 0.201 seconds.
+✔ Test "legacy v2 outbox imports parked into client state" passed after 0.207 seconds.
+✔ Test "legacy import uses exact registry identifier bytes" passed after 0.212 seconds.
+✔ Test "legacy v6 imports attachments and routing identity" passed after 0.213 seconds.
+✔ Test "cancelable stage does not suppress legacy state import" passed after 0.219 seconds.
+✔ Test "legacy import accepts only gateways in the pairing registry" passed after 0.233 seconds.
+✔ Test "preserved shared legacy database blocks targeted forget" passed after 0.265 seconds.
+✔ Test "session settings expectation survives a cold outbox reopen" passed after 0.265 seconds.
+✔ Test "legacy null settings row cannot claim or retry without current client authorization" passed after 0.279 seconds.
+✔ Test "full removal deletes both databases legacy files and sidecars" passed after 0.308 seconds.
+✔ Test "canceling a repeated forget preserves the finalized tombstone" passed after 0.341 seconds.
+✔ Test "canonical proof wins a cancellation race" passed after 0.341 seconds.
+✔ Test "retired facade cannot recover a replacement facades sends" passed after 0.341 seconds.
+✔ Test "routing identity survives a cold container reopen" passed after 0.341 seconds.
+✔ Test "hash only scrub marker remains recoverable" passed after 0.356 seconds.
+✔ Test "canonical merge preserves newer cache rows" passed after 0.367 seconds.
+✔ Test "structured retry preserves its owner and rejects an old unstructured update" passed after 0.368 seconds.
+✔ Test "commands and attachment blobs round trip in order" passed after 0.368 seconds.
+✔ Test "forgotten gateway is never resurrected by a late legacy import" passed after 0.410 seconds.
+✔ Test "empty transcript deletes its partition" passed after 0.410 seconds.
+✔ Test "canceled optimistic row cannot reenter cache from a stale snapshot" passed after 0.410 seconds.
+✔ Test "interrupted sends fail closed once" passed after 0.444 seconds.
+✔ Test "retry adopts a fresh verified route" passed after 0.446 seconds.
+✔ Test "structured send context survives a cold database reopen" passed after 0.446 seconds.
+✔ Test "corrupt cache rebuilds while corrupt client state is preserved" passed after 0.446 seconds.
+✔ Test "unknown registry preserves a cancelable staged removal" passed after 0.446 seconds.
+✔ Test "retiring a store ends only its forwarded change streams" passed after 0.446 seconds.
+✔ Test "transcript and sessions round trip as row JSON" passed after 0.446 seconds.
+✔ Test "nil agent rows use the canonical empty scope owner" passed after 0.446 seconds.
+✔ Test "cache format mismatch rebuilds without touching client state" passed after 0.446 seconds.
+✔ Suite ClientDatabaseLegacyImportTests passed after 0.458 seconds.
+✔ Test "staged gateway removal uses exact registry identifier bytes" passed after 0.475 seconds.
+✔ Test "agent snapshot discards legacy roster without touching transcripts" passed after 0.476 seconds.
+✔ Test "concurrent canonical merges do not lose messages" passed after 0.476 seconds.
+✔ Test "claims are insertion FIFO when timestamps tie and exclusive" passed after 0.477 seconds.
+✔ Test "stale queued and acknowledged commands require user action" passed after 0.477 seconds.
+✔ Test "one broken pending removal does not block another gateway" passed after 0.477 seconds.
+✔ Test "agent session snapshots preserve another agents offline roster" passed after 0.477 seconds.
+✔ Test "canonical cache excludes optimistic outbox rows" passed after 0.483 seconds.
+✔ Test "cancellation stops only unclaimed client state" passed after 0.483 seconds.
+✔ Test "commit started recovery finishes even while gateway remains registered" passed after 0.484 seconds.
+✔ Test "empty or rejected agent snapshot cannot erase another roster" passed after 0.484 seconds.
+✔ Test "pre v7 upgrade reopens and fences a settings bound retry" passed after 0.492 seconds.
+✔ Test "transcripts are scoped by gateway and agent in one cache" passed after 0.491 seconds.
+✔ Test "gateway removal deletes only that gateways cache and state" passed after 0.496 seconds.
+✔ Test "gateway removal scrubs its payloads from shared database files" passed after 0.496 seconds.
+✔ Test "nonancestral parking gives failed uncertain rows a fresh retry identity" passed after 0.499 seconds.
+✔ Test "older client claim parks structured row for a current-client reopen" passed after 0.501 seconds.
+✔ Test "malformed cache partitions are discarded atomically" passed after 0.502 seconds.
+✔ Test "empty root reconcile permits first row and parks a wiped scope" passed after 0.502 seconds.
+✔ Test "parked accepted attachment follows the fresh retry identity" passed after 0.504 seconds.
+✔ Test "bulk branch parking invalidates sibling subscribers" passed after 0.506 seconds.
+✔ Test "staged gateway removal reconciles against the pairing registry" passed after 0.519 seconds.
+✔ Test "queue and attachment budgets are gateway scoped" passed after 0.522 seconds.
+✔ Test "cache bounds sessions messages and transcript partitions" passed after 0.531 seconds.
+✔ Test "agent session owner partitions remain bounded" passed after 0.531 seconds.
+✔ Suite ChatTranscriptCacheStoreTests passed after 0.532 seconds.
+✔ Test "parked accepted rows mint retry identity while queued rows keep it" passed after 0.532 seconds.
+✔ Suite ChatCommandOutboxStoreTests passed after 0.533 seconds.
+✔ Test run with 62 tests in 3 suites passed after 0.533 seconds.
+$ node --import ./scripts/tsx.mjs scripts/native-app-i18n.ts verify
+native-app-i18n: entries=4406 changed=false
+android-app-i18n: appSourceKeys=1667 thirdPartySourceKeys=4 wearSourceKeys=122
+apple-app-i18n: sourceMacosKeys=1428

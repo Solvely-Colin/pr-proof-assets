@@ -1,0 +1,26 @@
+{
+  "pr": 132689,
+  "head": "b23b3426b212db9b86dce6708d917bcc0457e347",
+  "mediaCaptureHead": "33ad964324f86301a60a060ab9435f05d51c11a7",
+  "stackedParent": "48b172c027161e17beb81f6621072e42669b71a8",
+  "iosTree": "7b7716fc8a916c13ddcea035c8fa69b92c6d0527",
+  "openClawKitTree": "efb806a93ae6e12b0473cd508aa4a0b7229efb52",
+  "capturedAt": "2026-08-31",
+  "device": "OpenClaw Capture",
+  "runtime": "iOS 27.0 simulator",
+  "uiTest": {
+    "name": "OpenClawSnapshotUITests/testActiveResponseComposerMorphsFromStopToFollowUp",
+    "passed": 1,
+    "failed": 0
+  },
+  "focusedTests": {
+    "gatewayChatAdmissionAndSession": 87,
+    "chatTranscriptCacheStore": 62,
+    "routeLeaseSettingsCas": "passed"
+  },
+  "nativeI18nEntries": 4406,
+  "repositoryFormatter": "passed",
+  "autoreviewP0Findings": 0,
+  "iosSimulatorBuild": "passed",
+  "proofFreshness": "Media was captured on 2026-08-31. The final restacked head has byte-identical apps/ios and apps/shared/OpenClawKit trees."
+}

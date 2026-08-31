@@ -1,0 +1,518 @@
+Command line invocation:
+    /Users/solvely/Downloads/Xcode-beta.app/Contents/Developer/usr/bin/xcodebuild -project apps/ios/OpenClaw.xcodeproj -scheme OpenClawUITests -destination id=D47A6176-201E-4D79-B2A0-9170C2052014 "-only-testing:OpenClawUITests/OpenClawSnapshotUITests/testChatComposerStartsCompactAndGrowsWithDraft" -resultBundlePath .artifacts/final-20260831/after-parent-composer.xcresult test-without-building
+
+Resolve Package Graph
+
+Downloading package prebuilt https://download.swift.org/prebuilts/swift-syntax/603.0.2/swiftlang-6.4.0.23.5-macosx27.0-MacroSupport.zip
+
+
+Resolved source packages:
+  Commander: https://github.com/steipete/Commander.git @ 0.2.4
+  swabble: /Users/solvely/Projects/ai-agents/openclaw/.worktrees/ios-composer-webui/apps/swabble
+  OpenClawKit: /Users/solvely/Projects/ai-agents/openclaw/.worktrees/ios-composer-webui/apps/shared/OpenClawKit
+  WebRTC: https://github.com/stasel/WebRTC.git @ 151.0.0
+  GRDB: https://github.com/groue/GRDB.swift.git @ 7.11.1
+  swift-markdown: https://github.com/swiftlang/swift-markdown @ 0.8.0
+  cmark-gfm: https://github.com/swiftlang/swift-cmark.git @ 0.8.0
+  swift-testing: https://github.com/apple/swift-testing @ 6.3.2
+  SwiftMath: https://github.com/mgriebling/SwiftMath @ 1.7.3
+  ElevenLabsKit: https://github.com/steipete/ElevenLabsKit @ 0.1.1
+  swift-syntax: https://github.com/swiftlang/swift-syntax.git @ 603.0.2
+
+Writing result bundle at path:
+	/Users/solvely/Projects/ai-agents/openclaw/.worktrees/ios-composer-webui/.artifacts/final-20260831/after-parent-composer.xcresult
+
+2026-08-31 09:11:15.432866-0400 OpenClawUITests-Runner[5154:14565074] [Default] Running tests...
+objc[5154]: Class LACUIPasscodeServiceOptionsViewConfiguration is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/LocalAuthenticationCoreUI.framework/LocalAuthenticationCoreUI (0x7019a60508) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/LocalAuthenticationEmbeddedUI.framework/LocalAuthenticationEmbeddedUI (0x700d5294f0). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[5154]: Class AKDisplayNameFormatter is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit (0x13a26a5b8) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI (0x701167c770). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[5154]: Class AKAlertImageURLProvider is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit (0x13a26bf08) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI (0x701167c7c0). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[5154]: Class AKBiometricRatchetUtility is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit (0x13a26c700) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI (0x701167c838). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[5154]: Class _TtCV9JetEngine21SandboxExtensionToken6Handle is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine (0x701f44bff8) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetAsset.framework/JetAsset (0x174b8c590). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[5154]: Class _TtC9JetEngine21NotificationsListener is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine (0x701f449600) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetAsset.framework/JetAsset (0x174b8e360). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[5154]: Class _TtC9JetEngine21JetPackReloadObserver is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine (0x701f44e078) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetAsset.framework/JetAsset (0x174b8e440). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[5154]: Class _TtCC9JetEngine21JetPackReloadObserver13ListenerToken is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine (0x701f44e130) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetAsset.framework/JetAsset (0x174b8e4f8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[5154]: Class _TtC9JetEngine27DaemonSessionImplementation is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine (0x701f4473d0) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetAsset.framework/JetAsset (0x174b8e5d8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-08-31 09:11:23.028.
+Test Suite 'OpenClawUITests.xctest' started at 2026-08-31 09:11:23.033.
+Test Suite 'OpenClawSnapshotUITests' started at 2026-08-31 09:11:23.034.
+Test Case '-[OpenClawUITests.OpenClawSnapshotUITests testChatComposerStartsCompactAndGrowsWithDraft]' started.
+    t =     0.03s Start Test at 2026-08-31 09:11:23.065
+    t =     0.07s Set Up
+2026-08-31 09:11:23.157635-0400 OpenClawUITests-Runner[5154:14565074] Couldn't detect/set language...
+2026-08-31 09:11:23.157881-0400 OpenClawUITests-Runner[5154:14565074] Couldn't detect/set locale...
+2026-08-31 09:11:23.159642-0400 OpenClawUITests-Runner[5154:14565074] Couldn't detect/set launch_arguments...
+    t =     0.13s Open ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug
+    t =     0.13s     Launch ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug
+2026-08-31 09:11:23.381 xcodebuild[5107:14564335] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-08-31 09:11:23.382 xcodebuild[5107:14564335] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.53s         Setting up automation session
+objc[5154]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x168a2c398) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x168d54310). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =    11.79s         Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    16.98s Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to become Running Foreground
+    t =    16.98s Waiting 8.0s for "RootTabs.Ready" Any to exist
+    t =    18.06s     Checking `Expect predicate `existsNoRetry == 1` for object "RootTabs.Ready" Any`
+    t =    18.06s         Checking existence of `"RootTabs.Ready" Any`
+    t =    19.44s Checking `Expect predicate `value == "ready:chat"` for object "RootTabs.Ready" Any`
+    t =    19.44s     Find the "RootTabs.Ready" Any
+    t =    19.49s Waiting 8.0s for "chat-message-input" Any to exist
+    t =    20.57s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-message-input" Any`
+    t =    20.57s         Checking existence of `"chat-message-input" Any`
+    t =    20.62s Waiting 5.0s for "chat-realtime-control" Button to exist
+    t =    21.70s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-realtime-control" Button`
+    t =    21.70s         Checking existence of `"chat-realtime-control" Button`
+    t =    21.74s Waiting 5.0s for "chat-attachment-picker" Button to exist
+    t =    22.81s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-attachment-picker" Button`
+    t =    22.81s         Checking existence of `"chat-attachment-picker" Button`
+    t =    22.86s Waiting 5.0s for "chat-dictation-control" Button to exist
+    t =    23.93s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-dictation-control" Button`
+    t =    23.93s         Checking existence of `"chat-dictation-control" Button`
+    t =    23.98s Waiting 5.0s for "chat-composer-surface" Other to exist
+    t =    25.05s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-composer-surface" Other`
+    t =    25.05s         Checking existence of `"chat-composer-surface" Other`
+    t =    25.09s Waiting 5.0s for "chat-agent-identity" Other to exist
+    t =    26.15s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-agent-identity" Other`
+    t =    26.15s         Checking existence of `"chat-agent-identity" Other`
+    t =    26.19s Find the "chat-agent-identity" Other
+    t =    26.23s Tap "chat-agent-identity" Other
+    t =    26.23s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    26.24s     Find the "chat-agent-identity" Other
+    t =    26.28s     Check for interrupting elements affecting "chat-agent-identity" Other
+    t =    26.32s     Synthesize event
+    t =    26.77s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    27.85s Checking `Expect predicate `value == "Expanded"` for object "chat-agent-identity" Other`
+    t =    27.85s     Find the "chat-agent-identity" Other
+    t =    27.90s Checking existence of `"chat-send-message" Button`
+    t =    27.94s Find the "chat-agent-identity" Other
+    t =    27.97s Find the "chat-composer-surface" Other
+    t =    28.01s Find the "chat-attachment-picker" Button
+    t =    28.07s Find the "chat-composer-surface" Other
+    t =    28.10s Find the "chat-attachment-picker" Button
+    t =    28.15s Find the "chat-composer-surface" Other
+    t =    28.19s Find the "chat-dictation-control" Button
+    t =    28.23s Find the "chat-composer-surface" Other
+    t =    28.27s Find the "chat-dictation-control" Button
+    t =    28.32s Find the "chat-composer-surface" Other
+    t =    28.36s Find the "chat-realtime-control" Button
+    t =    28.39s Find the "chat-composer-surface" Other
+    t =    28.43s Find the "chat-realtime-control" Button
+    t =    28.47s Find the "chat-composer-surface" Other
+    t =    28.52s Find the "chat-attachment-picker" Button
+    t =    28.56s Find the "chat-attachment-picker" Button
+    t =    28.61s Find the "chat-dictation-control" Button
+    t =    28.65s Find the "chat-dictation-control" Button
+    t =    28.69s Find the "chat-realtime-control" Button
+    t =    28.73s Find the "chat-realtime-control" Button
+    t =    28.78s Waiting 5.0s for "chat-context-usage" Button to exist
+    t =    29.84s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-context-usage" Button`
+    t =    29.84s         Checking existence of `"chat-context-usage" Button`
+    t =    29.88s Waiting 5.0s for "chat-composer-inline-permissions" Button to exist
+    t =    30.93s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-composer-inline-permissions" Button`
+    t =    30.94s         Checking existence of `"chat-composer-inline-permissions" Button`
+    t =    30.98s Waiting 5.0s for "chat-composer-inline-model" Button to exist
+    t =    32.06s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-composer-inline-model" Button`
+    t =    32.06s         Checking existence of `"chat-composer-inline-model" Button`
+    t =    32.10s Waiting 5.0s for "chat-composer-inline-effort" Button to exist
+    t =    33.17s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-composer-inline-effort" Button`
+    t =    33.17s         Checking existence of `"chat-composer-inline-effort" Button`
+    t =    33.21s Find the "chat-composer-inline-permissions" Button
+    t =    33.25s Find the "chat-composer-inline-permissions" Button
+    t =    33.29s Find the "chat-composer-inline-model" Button
+    t =    33.32s Find the "chat-composer-inline-model" Button
+    t =    33.37s Find the "chat-composer-inline-effort" Button
+    t =    33.41s Find the "chat-composer-inline-effort" Button
+    t =    33.45s Find the "chat-composer-inline-permissions" Button
+    t =    33.49s Find the "chat-composer-surface" Other
+    t =    33.54s Find the "chat-composer-inline-permissions" Button
+    t =    33.58s Find the "chat-composer-surface" Other
+    t =    33.61s Find the "chat-composer-inline-permissions" Button
+    t =    33.65s Find the "chat-dictation-control" Button
+    t =    33.69s Find the "chat-context-usage" Button
+    t =    33.74s Find the "chat-composer-surface" Other
+    t =    33.78s Find the "chat-context-usage" Button
+    t =    33.82s Find the "chat-composer-surface" Other
+    t =    33.86s Find the "chat-context-usage" Button
+    t =    33.91s Find the "chat-dictation-control" Button
+    t =    33.95s Find the "chat-composer-inline-model" Button
+    t =    34.00s Find the "chat-composer-surface" Other
+    t =    34.03s Find the "chat-composer-inline-model" Button
+    t =    34.08s Find the "chat-composer-surface" Other
+    t =    34.11s Find the "chat-composer-inline-model" Button
+    t =    34.16s Find the "chat-dictation-control" Button
+    t =    34.20s Find the "chat-composer-inline-effort" Button
+    t =    34.24s Find the "chat-composer-surface" Other
+    t =    34.28s Find the "chat-composer-inline-effort" Button
+    t =    34.33s Find the "chat-composer-surface" Other
+    t =    34.37s Find the "chat-composer-inline-effort" Button
+    t =    34.41s Find the "chat-dictation-control" Button
+    t =    34.45s Find the "chat-composer-inline-permissions" Button
+    t =    34.49s Find the "chat-composer-inline-model" Button
+    t =    34.52s Find the "chat-composer-inline-effort" Button
+    t =    34.57s Find the "chat-context-usage" Button
+    t =    34.60s Find the "chat-context-usage" Button
+    t =    34.65s Find the "chat-composer-inline-permissions" Button
+    t =    34.69s Find the "chat-attachment-picker" Button
+    t =    34.74s Find the "chat-context-usage" Button
+    t =    34.77s Find the "chat-composer-inline-permissions" Button
+    t =    34.82s Find the "chat-composer-inline-model" Button
+    t =    34.86s Find the "chat-context-usage" Button
+    t =    34.91s Find the "chat-composer-inline-effort" Button
+    t =    34.94s Find the "chat-composer-inline-model" Button
+    t =    34.99s Find the "chat-dictation-control" Button
+    t =    35.03s Find the "chat-composer-inline-effort" Button
+    t =    35.07s Find the "chat-realtime-control" Button
+    t =    35.11s Find the "chat-dictation-control" Button
+    t =    35.16s Find the "chat-attachment-picker" Button
+    t =    35.20s Find the "chat-composer-inline-permissions" Button
+    t =    35.25s Find the "chat-composer-inline-permissions" Button
+    t =    35.29s Find the "chat-context-usage" Button
+    t =    35.33s Find the "chat-context-usage" Button
+    t =    35.37s Find the "chat-composer-inline-model" Button
+    t =    35.42s Find the "chat-composer-inline-model" Button
+    t =    35.46s Find the "chat-composer-inline-effort" Button
+    t =    35.51s Find the "chat-composer-inline-effort" Button
+    t =    35.55s Find the "chat-dictation-control" Button
+    t =    35.60s Find the "chat-dictation-control" Button
+    t =    35.64s Find the "chat-realtime-control" Button
+    t =    35.69s Find the "chat-context-usage" Button
+    t =    35.72s Find the "chat-message-input" Any
+    t =    35.77s Find the "chat-composer-surface" Other
+    t =    35.81s Find the "chat-message-input" TextView
+    t =    35.87s Find the "chat-attachment-picker" Button
+    t =    35.91s Find the "chat-attachment-picker" Button
+    t =    35.96s Find the "chat-dictation-control" Button
+    t =    36.00s Find the "chat-realtime-control" Button
+    t =    36.05s Find the "chat-dictation-control" Button
+    t =    36.08s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    36.24s Added attachment named 'chat-composer-inline-controls'
+    t =    36.25s Tap "chat-composer-inline-permissions" Button
+    t =    36.25s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    36.25s     Find the "chat-composer-inline-permissions" Button
+    t =    36.30s     Check for interrupting elements affecting "chat-composer-inline-permissions" Button
+    t =    36.34s     Synthesize event
+    t =    36.35s         Scroll element to visible
+    t =    36.35s         Find the "chat-composer-inline-permissions" Button
+    t =    36.40s         Computed hit point {-1, -1} after scrolling to visible
+    t =    36.70s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    36.98s Waiting 3.0s for "Default (inherited)" Button to exist
+    t =    38.04s     Checking `Expect predicate `existsNoRetry == 1` for object "Default (inherited)" Button`
+    t =    38.04s         Checking existence of `"Default (inherited)" Button`
+    t =    38.10s Waiting 3.0s for "Read-only" Button to exist
+    t =    39.17s     Checking `Expect predicate `existsNoRetry == 1` for object "Read-only" Button`
+    t =    39.18s         Checking existence of `"Read-only" Button`
+    t =    39.23s Waiting 3.0s for "Guarded" Button to exist
+    t =    40.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Guarded" Button`
+    t =    40.30s         Checking existence of `"Guarded" Button`
+    t =    40.36s Waiting 3.0s for "Workspace" Button to exist
+    t =    41.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Workspace" Button`
+    t =    41.44s         Checking existence of `"Workspace" Button`
+    t =    41.49s Waiting 3.0s for "Full" Button to exist
+    t =    42.56s     Checking `Expect predicate `existsNoRetry == 1` for object "Full" Button`
+    t =    42.56s         Checking existence of `"Full" Button`
+    t =    42.61s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    42.76s Added attachment named 'chat-composer-permissions'
+    t =    42.76s Tap Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'[0.50, 0.20]
+    t =    42.76s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    42.76s     Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    42.79s     Check for interrupting elements affecting "OpenClaw" Application
+    t =    42.84s     Synthesize event
+    t =    42.84s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    42.87s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    42.90s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    43.22s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    43.23s Tap "chat-composer-inline-model" Button
+    t =    43.23s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    43.23s     Find the "chat-composer-inline-model" Button
+    t =    43.28s     Check for interrupting elements affecting "chat-composer-inline-model" Button
+    t =    43.32s     Synthesize event
+    t =    43.62s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    43.64s Waiting 3.0s for "openai/gpt-5.6-sol" Button to exist
+    t =    44.72s     Checking `Expect predicate `existsNoRetry == 1` for object "openai/gpt-5.6-sol" Button`
+    t =    44.72s         Checking existence of `"openai/gpt-5.6-sol" Button`
+    t =    44.77s Checking existence of `"Default: openai/gpt-5.6-sol" Button`
+    t =    44.81s Waiting 3.0s for "anthropic/claude-opus-4-1" Button to exist
+    t =    45.89s     Checking `Expect predicate `existsNoRetry == 1` for object "anthropic/claude-opus-4-1" Button`
+    t =    45.89s         Checking existence of `"anthropic/claude-opus-4-1" Button`
+    t =    45.93s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    46.07s Added attachment named 'chat-composer-model'
+    t =    46.07s Tap "anthropic/claude-opus-4-1" Button
+    t =    46.07s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    46.08s     Find the "anthropic/claude-opus-4-1" Button
+    t =    46.14s     Check for interrupting elements affecting "anthropic/claude-opus-4-1" Button
+    t =    46.17s     Synthesize event
+    t =    46.47s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    46.48s Waiting 3.0s for "chat-composer-inline-model" Button to exist
+    t =    47.53s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-composer-inline-model" Button`
+    t =    47.53s         Checking existence of `"chat-composer-inline-model" Button`
+    t =    48.59s Checking `Expect predicate `value == "claude-opus-4-1"` for object "chat-composer-inline-model" Button`
+    t =    48.59s     Find the "chat-composer-inline-model" Button
+    t =    48.64s Tap "chat-composer-inline-model" Button
+    t =    48.64s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    48.64s     Find the "chat-composer-inline-model" Button
+    t =    48.68s     Check for interrupting elements affecting "chat-composer-inline-model" Button
+    t =    48.72s     Synthesize event
+    t =    49.02s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    49.02s Waiting 3.0s for "anthropic/claude-opus-4-1" Button to exist
+    t =    50.04s     Checking `Expect predicate `existsNoRetry == 1` for object "anthropic/claude-opus-4-1" Button`
+    t =    50.04s         Checking existence of `"anthropic/claude-opus-4-1" Button`
+    t =    50.10s Checking existence of `"openai/gpt-5.6-sol" Button`
+    t =    50.14s Tap "openai/gpt-5.6-sol" Button
+    t =    50.14s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    50.14s     Find the "openai/gpt-5.6-sol" Button
+    t =    50.20s     Check for interrupting elements affecting "openai/gpt-5.6-sol" Button
+    t =    50.23s     Synthesize event
+    t =    50.53s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    50.53s Waiting 3.0s for "chat-composer-inline-model" Button to exist
+    t =    51.56s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-composer-inline-model" Button`
+    t =    51.56s         Checking existence of `"chat-composer-inline-model" Button`
+    t =    52.63s Checking `Expect predicate `value == "gpt-5.6-sol"` for object "chat-composer-inline-model" Button`
+    t =    52.63s     Find the "chat-composer-inline-model" Button
+    t =    52.68s Tap "chat-composer-inline-effort" Button
+    t =    52.69s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    52.69s     Find the "chat-composer-inline-effort" Button
+    t =    52.73s     Check for interrupting elements affecting "chat-composer-inline-effort" Button
+    t =    52.76s     Synthesize event
+    t =    53.05s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    53.06s Waiting 3.0s for "Thinking" Button to exist
+    t =    54.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Thinking" Button`
+    t =    54.08s         Checking existence of `"Thinking" Button`
+    t =    54.13s Waiting 3.0s for "Fast" Button to exist
+    t =    55.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Fast" Button`
+    t =    55.15s         Checking existence of `"Fast" Button`
+    t =    55.19s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    55.34s Added attachment named 'chat-composer-effort'
+    t =    55.34s Tap Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'[0.50, 0.20]
+    t =    55.34s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    55.34s     Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    55.37s     Check for interrupting elements affecting "OpenClaw" Application
+    t =    55.40s     Synthesize event
+    t =    55.41s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    55.43s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    55.46s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    55.78s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    55.79s Tap "chat-context-usage" Button
+    t =    55.79s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    55.79s     Find the "chat-context-usage" Button
+    t =    55.83s     Check for interrupting elements affecting "chat-context-usage" Button
+    t =    55.86s     Synthesize event
+    t =    56.17s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    56.17s Waiting 3.0s for "24.0k of 128.0k tokens used" Any to exist
+    t =    57.19s     Checking `Expect predicate `existsNoRetry == 1` for object "24.0k of 128.0k tokens used" Any`
+    t =    57.19s         Checking existence of `"24.0k of 128.0k tokens used" Any`
+    t =    57.24s Waiting 3.0s for "Compact Thread" Button to exist
+    t =    58.27s     Checking `Expect predicate `existsNoRetry == 1` for object "Compact Thread" Button`
+    t =    58.27s         Checking existence of `"Compact Thread" Button`
+    t =    58.32s Find the "Compact Thread" Button
+    t =    58.36s Tap Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'[0.50, 0.20]
+    t =    58.36s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    58.37s     Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    58.39s     Check for interrupting elements affecting "OpenClaw" Application
+    t =    58.42s     Synthesize event
+    t =    58.43s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    58.45s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    58.48s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    58.80s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    58.81s Tap "chat-attachment-picker" Button
+    t =    58.81s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    58.81s     Find the "chat-attachment-picker" Button
+    t =    58.85s     Check for interrupting elements affecting "chat-attachment-picker" Button
+    t =    58.90s     Synthesize event
+    t =    58.91s         Scroll element to visible
+    t =    58.91s         Find the "chat-attachment-picker" Button
+    t =    58.95s         Computed hit point {-1, -1} after scrolling to visible
+    t =    59.24s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    59.25s Waiting 3.0s for "Photo Library" Button to exist
+    t =    60.28s     Checking `Expect predicate `existsNoRetry == 1` for object "Photo Library" Button`
+    t =    60.28s         Checking existence of `"Photo Library" Button`
+    t =    60.33s Find the "Photo Library" Button
+    t =    60.39s Waiting 3.0s for "Camera" Button to exist
+    t =    61.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Camera" Button`
+    t =    61.41s         Checking existence of `"Camera" Button`
+    t =    61.47s Waiting 3.0s for "Choose Media File" Button to exist
+    t =    62.48s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose Media File" Button`
+    t =    62.49s         Checking existence of `"Choose Media File" Button`
+    t =    62.54s Find the "Choose Media File" Button
+    t =    62.59s Waiting 3.0s for "Verbosity" Button to exist
+    t =    63.62s     Checking `Expect predicate `existsNoRetry == 1` for object "Verbosity" Button`
+    t =    63.62s         Checking existence of `"Verbosity" Button`
+    t =    63.68s Waiting 3.0s for "Web Search" Button to exist
+    t =    64.68s     Checking `Expect predicate `existsNoRetry == 1` for object "Web Search" Button`
+    t =    64.68s         Checking existence of `"Web Search" Button`
+    t =    64.73s Waiting 3.0s for "Skills" Button to exist
+    t =    65.73s     Checking `Expect predicate `existsNoRetry == 1` for object "Skills" Button`
+    t =    65.73s         Checking existence of `"Skills" Button`
+    t =    65.79s Waiting 3.0s for "Connectors" Button to exist
+    t =    66.80s     Checking `Expect predicate `existsNoRetry == 1` for object "Connectors" Button`
+    t =    66.80s         Checking existence of `"Connectors" Button`
+    t =    66.86s Checking existence of `"Permissions" Button`
+    t =    66.90s Get number of matches for: Elements matching predicate 'label == "Model"'
+    t =    66.96s Checking existence of `"Thinking" Button`
+    t =    67.00s Checking existence of `"Fast" Button`
+    t =    67.06s Checking existence of `"Voice Memo" Button`
+    t =    67.10s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    67.25s Added attachment named 'chat-composer-capabilities'
+    t =    67.25s Tap Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'[0.50, 0.20]
+    t =    67.25s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    67.26s     Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    67.29s     Check for interrupting elements affecting "OpenClaw" Application
+    t =    67.33s     Synthesize event
+    t =    67.34s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    67.37s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    67.41s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    67.72s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    67.73s Tap "chat-attachment-picker" Button
+    t =    67.73s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    67.73s     Find the "chat-attachment-picker" Button
+    t =    67.77s     Check for interrupting elements affecting "chat-attachment-picker" Button
+    t =    67.81s     Synthesize event
+    t =    67.83s         Scroll element to visible
+    t =    67.83s         Find the "chat-attachment-picker" Button
+    t =    67.88s         Computed hit point {-1, -1} after scrolling to visible
+    t =    68.17s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    68.18s Tap "Skills" Button
+    t =    68.18s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    68.18s     Find the "Skills" Button
+    t =    68.24s     Check for interrupting elements affecting "chat-composer-skills" Button
+    t =    68.29s     Synthesize event
+    t =    68.58s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    68.59s Waiting 3.0s for "Auto Review" Button to exist
+    t =    69.61s     Checking `Expect predicate `existsNoRetry == 1` for object "Auto Review" Button`
+    t =    69.61s         Checking existence of `"Auto Review" Button`
+    t =    69.67s Waiting 3.0s for "Disabled Skill — Disabled in the Gateway configuration." Button to exist
+    t =    70.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Disabled Skill — Disabled in the Gateway configuration." Button`
+    t =    70.70s         Checking existence of `"Disabled Skill — Disabled in the Gateway configuration." Button`
+    t =    70.75s Find the "Disabled Skill — Disabled in the Gateway configuration." Button
+    t =    70.80s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    70.96s Added attachment named 'chat-composer-skills'
+    t =    70.96s Tap Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'[0.50, 0.20]
+    t =    70.96s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    70.96s     Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    70.99s     Check for interrupting elements affecting "OpenClaw" Application
+    t =    71.03s     Synthesize event
+    t =    71.04s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    71.06s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    71.10s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    71.41s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    71.42s Tap "chat-attachment-picker" Button
+    t =    71.42s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    71.43s     Find the "chat-attachment-picker" Button
+    t =    71.48s     Check for interrupting elements affecting "chat-attachment-picker" Button
+    t =    71.51s     Synthesize event
+    t =    71.53s         Scroll element to visible
+    t =    71.53s         Find the "chat-attachment-picker" Button
+    t =    71.58s         Computed hit point {-1, -1} after scrolling to visible
+    t =    71.87s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    71.87s Tap "Connectors" Button
+    t =    71.87s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    71.88s     Find the "Connectors" Button
+    t =    71.92s     Check for interrupting elements affecting "chat-composer-connectors" Button
+    t =    71.97s     Synthesize event
+    t =    72.27s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    72.28s Waiting 3.0s for "GitHub" Button to exist
+    t =    73.30s     Checking `Expect predicate `existsNoRetry == 1` for object "GitHub" Button`
+    t =    73.30s         Checking existence of `"GitHub" Button`
+    t =    73.36s Waiting 3.0s for "Linear" Button to exist
+    t =    74.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Linear" Button`
+    t =    74.38s         Checking existence of `"Linear" Button`
+    t =    74.43s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    74.57s Added attachment named 'chat-composer-connectors'
+    t =    74.57s Tap "GitHub" Button
+    t =    74.57s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    74.58s     Find the "GitHub" Button
+    t =    74.62s     Check for interrupting elements affecting "GitHub" Button
+    t =    74.66s     Synthesize event
+    t =    74.95s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    74.96s Waiting 3.0s for "Enabled for this session" Button to exist
+    t =    75.98s     Checking `Expect predicate `existsNoRetry == 1` for object "Enabled for this session" Button`
+    t =    75.99s         Checking existence of `"Enabled for this session" Button`
+    t =    76.04s Waiting 3.0s for "Tool Access" Button to exist
+    t =    77.05s     Checking `Expect predicate `existsNoRetry == 1` for object "Tool Access" Button`
+    t =    77.05s         Checking existence of `"Tool Access" Button`
+    t =    77.09s Tap "Tool Access" Button
+    t =    77.09s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    77.10s     Find the "Tool Access" Button
+    t =    77.14s     Check for interrupting elements affecting "Tool Access" Button
+    t =    77.18s     Synthesize event
+    t =    77.48s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    77.48s Waiting 3.0s for "Search code" Button to exist
+    t =    78.51s     Checking `Expect predicate `existsNoRetry == 1` for object "Search code" Button`
+    t =    78.51s         Checking existence of `"Search code" Button`
+    t =    78.56s Waiting 3.0s for "Create issue" Button to exist
+    t =    79.58s     Checking `Expect predicate `existsNoRetry == 1` for object "Create issue" Button`
+    t =    79.58s         Checking existence of `"Create issue" Button`
+    t =    79.63s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    79.80s Added attachment named 'chat-composer-tool-access'
+    t =    79.80s Tap Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'[0.50, 0.20]
+    t =    79.80s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    79.80s     Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    79.83s     Check for interrupting elements affecting "OpenClaw" Application
+    t =    79.87s     Synthesize event
+    t =    79.87s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    79.90s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    79.93s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    80.24s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    80.24s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    80.39s Added attachment named 'chat-composer-compact'
+    t =    80.40s Tap "chat-message-input" TextView
+    t =    80.40s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    80.40s     Find the "chat-message-input" TextView
+    t =    80.44s     Check for interrupting elements affecting "chat-message-input" TextView
+    t =    80.48s     Synthesize event
+    t =    80.77s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    81.42s Type 'Draft a polished l...' into "chat-message-input" TextView
+    t =    81.42s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    81.43s     Find the "chat-message-input" TextView
+    t =    81.51s     Check for interrupting elements affecting "chat-message-input" TextView
+    t =    81.55s     Synthesize event
+    t =    83.73s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    84.77s Checking `Expect predicate `BLOCKPREDICATE(0x167ebbed0)` for object "chat-message-input" TextView`
+    t =    84.77s     Find the "chat-message-input" TextView
+    t =    84.84s Waiting 3.0s for "chat-send-message" Button to exist
+    t =    85.86s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-send-message" Button`
+    t =    85.86s         Checking existence of `"chat-send-message" Button`
+    t =    85.92s Waiting 3.0s for "chat-realtime-control" Button to not exist
+    t =    86.94s     Checking `Expect predicate `existsNoRetry == 0` for object "chat-realtime-control" Button`
+    t =    86.94s         Checking existence of `"chat-realtime-control" Button`
+    t =    87.04s Find the "chat-send-message" Button
+    t =    87.14s Find the "chat-send-message" Button
+    t =    87.21s Find the "chat-composer-surface" Other
+    t =    87.27s Find the "chat-message-input" TextView
+    t =    87.36s Find the "chat-attachment-picker" Button
+    t =    87.44s Find the "chat-attachment-picker" Button
+    t =    87.50s Find the "chat-dictation-control" Button
+    t =    87.57s Find the "chat-send-message" Button
+    t =    87.66s Find the "chat-dictation-control" Button
+    t =    87.72s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    87.89s Added attachment named 'chat-composer-expanded'
+    t =    87.89s Tap Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'[0.50, 0.20]
+    t =    87.89s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    87.90s     Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    87.94s     Check for interrupting elements affecting "OpenClaw" Application
+    t =    88.01s     Synthesize event
+    t =    88.01s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    88.05s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    88.12s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    88.44s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    88.45s Waiting 3.0s for Keyboard (First Match) to not exist
+    t =    89.45s     Checking `Expect predicate `existsNoRetry == 0` for object Keyboard (First Match)`
+    t =    89.45s         Checking existence of `Keyboard (First Match)`
+    t =    89.61s Tear Down
+    t =    89.61s     Terminate ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug:5334
+    t =    90.70s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to become Not Running
+Test Case '-[OpenClawUITests.OpenClawSnapshotUITests testChatComposerStartsCompactAndGrowsWithDraft]' passed (90.892 seconds).
+Test Suite 'OpenClawSnapshotUITests' passed at 2026-08-31 09:12:53.956.
+	 Executed 1 test, with 0 failures (0 unexpected) in 90.892 (90.923) seconds
+Test Suite 'OpenClawUITests.xctest' passed at 2026-08-31 09:12:53.957.
+	 Executed 1 test, with 0 failures (0 unexpected) in 90.892 (90.923) seconds
+Test Suite 'Selected tests' passed at 2026-08-31 09:12:53.957.
+	 Executed 1 test, with 0 failures (0 unexpected) in 90.892 (90.929) seconds
+2026-08-31 09:12:54.351 xcodebuild[5107:14564335] [MT] IDETestOperationsObserverDebug: 102.955 elapsed -- Testing started completed.
+2026-08-31 09:12:54.351 xcodebuild[5107:14564335] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-08-31 09:12:54.351 xcodebuild[5107:14564335] [MT] IDETestOperationsObserverDebug: 102.955 sec, +102.955 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/solvely/Projects/ai-agents/openclaw/.worktrees/ios-composer-webui/.artifacts/final-20260831/after-parent-composer.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
