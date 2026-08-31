@@ -1,0 +1,21 @@
+{
+  "pr": 132683,
+  "head": "878ca8fbfc20db52d1bebb9b2be1105222b75945",
+  "baseline": "a7be8e5ec6ff9b4169eabe3bf37bb36396ac79ad",
+  "capturedAt": "2026-08-31",
+  "device": "OpenClaw Capture",
+  "runtime": "iOS 27.0 simulator",
+  "uiTest": {
+    "name": "OpenClawSnapshotUITests/testChatComposerStartsCompactAndGrowsWithDraft",
+    "passed": 1,
+    "failed": 0
+  },
+  "focusedTests": {
+    "gatewayChatAdmission": 69,
+    "replyDispatchAuthority": 8
+  },
+  "messagingTypecheck": "passed",
+  "nativeI18nEntries": 4397,
+  "iosSimulatorBuild": "passed",
+  "proofFreshness": "Both baseline and exact-head media were captured on 2026-08-31 from independently built simulator runs."
+}

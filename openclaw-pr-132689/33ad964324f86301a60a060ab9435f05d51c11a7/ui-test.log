@@ -1,0 +1,172 @@
+Command line invocation:
+    /Users/solvely/Downloads/Xcode-beta.app/Contents/Developer/usr/bin/xcodebuild -project apps/ios/OpenClaw.xcodeproj -scheme OpenClawUITests -destination id=D47A6176-201E-4D79-B2A0-9170C2052014 "-only-testing:OpenClawUITests/OpenClawSnapshotUITests/testActiveResponseComposerMorphsFromStopToFollowUp" -resultBundlePath .artifacts/final-20260831/after-delivery-followup.xcresult test-without-building
+
+Resolve Package Graph
+
+Downloading package prebuilt https://download.swift.org/prebuilts/swift-syntax/603.0.2/swiftlang-6.4.0.23.5-macosx27.0-MacroSupport.zip
+
+
+Resolved source packages:
+  OpenClawKit: /Users/solvely/Projects/ai-agents/openclaw/.worktrees/ios-composer-delivery/apps/shared/OpenClawKit
+  swabble: /Users/solvely/Projects/ai-agents/openclaw/.worktrees/ios-composer-delivery/apps/swabble
+  swift-markdown: https://github.com/swiftlang/swift-markdown @ 0.8.0
+  SwiftMath: https://github.com/mgriebling/SwiftMath @ 1.7.3
+  cmark-gfm: https://github.com/swiftlang/swift-cmark.git @ 0.8.0
+  ElevenLabsKit: https://github.com/steipete/ElevenLabsKit @ 0.1.1
+  Commander: https://github.com/steipete/Commander.git @ 0.2.4
+  swift-testing: https://github.com/apple/swift-testing @ 6.3.2
+  WebRTC: https://github.com/stasel/WebRTC.git @ 151.0.0
+  swift-syntax: https://github.com/swiftlang/swift-syntax.git @ 603.0.2
+  GRDB: https://github.com/groue/GRDB.swift.git @ 7.11.1
+
+Writing result bundle at path:
+	/Users/solvely/Projects/ai-agents/openclaw/.worktrees/ios-composer-delivery/.artifacts/final-20260831/after-delivery-followup.xcresult
+
+2026-08-31 09:17:29.452746-0400 OpenClawUITests-Runner[11704:14631096] [Default] Running tests...
+objc[11704]: Class LACUIPasscodeServiceOptionsViewConfiguration is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/LocalAuthenticationCoreUI.framework/LocalAuthenticationCoreUI (0x7017e54508) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/LocalAuthenticationEmbeddedUI.framework/LocalAuthenticationEmbeddedUI (0x700b8f54f0). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[11704]: Class AKDisplayNameFormatter is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit (0x13932a5b8) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI (0x700fa70770). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[11704]: Class AKAlertImageURLProvider is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit (0x13932bf08) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI (0x700fa707c0). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[11704]: Class AKBiometricRatchetUtility is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit (0x13932c700) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI (0x700fa70838). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[11704]: Class _TtCV9JetEngine21SandboxExtensionToken6Handle is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine (0x701d5e7ff8) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetAsset.framework/JetAsset (0x1729d0590). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[11704]: Class _TtC9JetEngine21NotificationsListener is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine (0x701d5e5600) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetAsset.framework/JetAsset (0x1729d2360). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[11704]: Class _TtC9JetEngine21JetPackReloadObserver is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine (0x701d5ea078) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetAsset.framework/JetAsset (0x1729d2440). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[11704]: Class _TtCC9JetEngine21JetPackReloadObserver13ListenerToken is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine (0x701d5ea130) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetAsset.framework/JetAsset (0x1729d24f8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[11704]: Class _TtC9JetEngine27DaemonSessionImplementation is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine (0x701d5e33d0) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/JetAsset.framework/JetAsset (0x1729d25d8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-08-31 09:17:37.741.
+Test Suite 'OpenClawUITests.xctest' started at 2026-08-31 09:17:37.742.
+Test Suite 'OpenClawSnapshotUITests' started at 2026-08-31 09:17:37.742.
+Test Case '-[OpenClawUITests.OpenClawSnapshotUITests testActiveResponseComposerMorphsFromStopToFollowUp]' started.
+    t =     0.02s Start Test at 2026-08-31 09:17:37.765
+    t =     0.06s Set Up
+2026-08-31 09:17:37.836716-0400 OpenClawUITests-Runner[11704:14631096] Couldn't detect/set language...
+2026-08-31 09:17:37.837092-0400 OpenClawUITests-Runner[11704:14631096] Couldn't detect/set locale...
+2026-08-31 09:17:37.839464-0400 OpenClawUITests-Runner[11704:14631096] Couldn't detect/set launch_arguments...
+    t =     0.10s Open ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug
+    t =     0.10s     Launch ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug
+2026-08-31 09:17:38.049 xcodebuild[11660:14630422] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-08-31 09:17:38.049 xcodebuild[11660:14630422] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.36s         Setting up automation session
+objc[11704]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x1696f8398) and /Library/Developer/CoreSimulator/Volumes/iOS_24A5370g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x169a1c310). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =    11.59s         Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    17.22s Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to become Running Foreground
+    t =    17.22s Waiting 8.0s for "RootTabs.Ready" Any to exist
+    t =    18.29s     Checking `Expect predicate `existsNoRetry == 1` for object "RootTabs.Ready" Any`
+    t =    18.30s         Checking existence of `"RootTabs.Ready" Any`
+    t =    19.74s Checking `Expect predicate `value == "ready:chat"` for object "RootTabs.Ready" Any`
+    t =    19.75s     Find the "RootTabs.Ready" Any
+    t =    19.81s Waiting 8.0s for "chat-message-input" Any to exist
+    t =    20.89s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-message-input" Any`
+    t =    20.89s         Checking existence of `"chat-message-input" Any`
+    t =    20.94s Tap "chat-message-input" Any
+    t =    20.94s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    20.94s     Find the "chat-message-input" Any
+    t =    20.99s     Check for interrupting elements affecting "chat-message-input" TextView
+    t =    21.06s     Synthesize event
+    t =    21.52s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    22.65s Type 'Keep working on th...' into "chat-message-input" TextView
+    t =    22.65s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    22.65s     Find the "chat-message-input" TextView
+    t =    22.74s     Check for interrupting elements affecting "chat-message-input" TextView
+    t =    22.80s     Synthesize event
+    t =    23.56s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    23.56s Waiting 5.0s for "chat-send-message" Button to exist
+    t =    24.64s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-send-message" Button`
+    t =    24.64s         Checking existence of `"chat-send-message" Button`
+    t =    24.70s Tap "chat-send-message" Button
+    t =    24.70s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    24.70s     Find the "chat-send-message" Button
+    t =    24.77s     Check for interrupting elements affecting "chat-send-message" Button
+    t =    24.82s     Synthesize event
+    t =    25.12s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    25.49s Waiting 8.0s for "Stop response" Button to exist
+    t =    26.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Stop response" Button`
+    t =    26.57s         Checking existence of `"Stop response" Button`
+    t =    26.64s Waiting 5.0s for "chat-composer-inline-permissions" Button to exist
+    t =    27.72s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-composer-inline-permissions" Button`
+    t =    27.72s         Checking existence of `"chat-composer-inline-permissions" Button`
+    t =    27.78s Waiting 5.0s for "chat-composer-inline-model" Button to exist
+    t =    28.85s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-composer-inline-model" Button`
+    t =    28.85s         Checking existence of `"chat-composer-inline-model" Button`
+    t =    28.92s Waiting 5.0s for "chat-composer-inline-effort" Button to exist
+    t =    29.99s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-composer-inline-effort" Button`
+    t =    30.00s         Checking existence of `"chat-composer-inline-effort" Button`
+    t =    30.06s Find the "chat-composer-inline-permissions" Button
+    t =    30.12s Find the "chat-composer-inline-model" Button
+    t =    30.19s Find the "chat-composer-inline-effort" Button
+    t =    30.24s Waiting 5.0s for "chat-context-usage" Button to exist
+    t =    31.29s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-context-usage" Button`
+    t =    31.30s         Checking existence of `"chat-context-usage" Button`
+    t =    31.35s Tap "chat-context-usage" Button
+    t =    31.35s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    31.35s     Find the "chat-context-usage" Button
+    t =    31.42s     Check for interrupting elements affecting "chat-context-usage" Button
+    t =    31.47s     Synthesize event
+    t =    31.77s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    32.05s Waiting 3.0s for "Compact Thread" Button to exist
+    t =    33.11s     Checking `Expect predicate `existsNoRetry == 1` for object "Compact Thread" Button`
+    t =    33.11s         Checking existence of `"Compact Thread" Button`
+    t =    33.19s Find the "Compact Thread" Button
+    t =    33.25s Tap Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'[0.50, 0.20]
+    t =    33.25s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    33.25s     Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    33.29s     Check for interrupting elements affecting "OpenClaw" Application
+    t =    33.33s     Synthesize event
+    t =    33.33s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    33.37s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    33.41s         Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    33.73s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    33.73s Tap "chat-message-input" TextView
+    t =    33.73s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    33.74s     Find the "chat-message-input" TextView
+    t =    33.78s     Check for interrupting elements affecting "chat-message-input" TextView
+    t =    33.82s     Synthesize event
+    t =    34.12s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    34.13s Type 'Also include the r...' into "chat-message-input" TextView
+    t =    34.13s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    34.13s     Find the "chat-message-input" TextView
+    t =    34.18s     Check for interrupting elements affecting "chat-message-input" TextView
+    t =    34.23s     Synthesize event
+    t =    35.02s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    35.02s Waiting 5.0s for "chat-send-message" Button to exist
+    t =    36.08s     Checking `Expect predicate `existsNoRetry == 1` for object "chat-send-message" Button`
+    t =    36.08s         Checking existence of `"chat-send-message" Button`
+    t =    36.14s Find the "chat-send-message" Button
+    t =    36.22s Checking existence of `"Steer response" Button`
+    t =    36.27s Checking existence of `"Stop response" Button`
+    t =    36.33s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    36.49s Added attachment named 'chat-active-follow-up-ready'
+    t =    36.49s Tap "chat-send-message" Button
+    t =    36.49s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    36.50s     Find the "chat-send-message" Button
+    t =    36.56s     Check for interrupting elements affecting "chat-send-message" Button
+    t =    36.61s     Synthesize event
+    t =    36.91s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to idle
+    t =    36.92s Waiting 8.0s for StaticText (First Match) to exist
+    t =    37.99s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    38.00s         Checking existence of `StaticText (First Match)`
+    t =    38.14s Waiting 5.0s for "Stop response" Button to exist
+    t =    39.21s     Checking `Expect predicate `existsNoRetry == 1` for object "Stop response" Button`
+    t =    39.21s         Checking existence of `"Stop response" Button`
+    t =    39.27s Find the Target Application 'ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug'
+    t =    39.42s Added attachment named 'chat-active-follow-up-sent'
+    t =    39.42s Tear Down
+    t =    39.42s     Terminate ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug:11892
+    t =    40.43s     Wait for ai.openclawfoundation.app.test.solvely-2ql5khqak5.debug to become Not Running
+Test Case '-[OpenClawUITests.OpenClawSnapshotUITests testActiveResponseComposerMorphsFromStopToFollowUp]' passed (40.478 seconds).
+Test Suite 'OpenClawSnapshotUITests' passed at 2026-08-31 09:18:18.244.
+	 Executed 1 test, with 0 failures (0 unexpected) in 40.478 (40.502) seconds
+Test Suite 'OpenClawUITests.xctest' passed at 2026-08-31 09:18:18.244.
+	 Executed 1 test, with 0 failures (0 unexpected) in 40.478 (40.502) seconds
+Test Suite 'Selected tests' passed at 2026-08-31 09:18:18.245.
+	 Executed 1 test, with 0 failures (0 unexpected) in 40.478 (40.504) seconds
+2026-08-31 09:18:18.648 xcodebuild[11660:14630422] [MT] IDETestOperationsObserverDebug: 53.533 elapsed -- Testing started completed.
+2026-08-31 09:18:18.648 xcodebuild[11660:14630422] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-08-31 09:18:18.648 xcodebuild[11660:14630422] [MT] IDETestOperationsObserverDebug: 53.533 sec, +53.533 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/solvely/Projects/ai-agents/openclaw/.worktrees/ios-composer-delivery/.artifacts/final-20260831/after-delivery-followup.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

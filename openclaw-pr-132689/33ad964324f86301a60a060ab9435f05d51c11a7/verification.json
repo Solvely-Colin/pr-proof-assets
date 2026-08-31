@@ -1,0 +1,22 @@
+{
+  "pr": 132689,
+  "head": "33ad964324f86301a60a060ab9435f05d51c11a7",
+  "stackedParent": "878ca8fbfc20db52d1bebb9b2be1105222b75945",
+  "capturedAt": "2026-08-31",
+  "device": "OpenClaw Capture",
+  "runtime": "iOS 27.0 simulator",
+  "uiTest": {
+    "name": "OpenClawSnapshotUITests/testActiveResponseComposerMorphsFromStopToFollowUp",
+    "passed": 1,
+    "failed": 0
+  },
+  "focusedTests": {
+    "gatewayChatAdmission": 69,
+    "chatTranscriptCacheStore": 62,
+    "routeLeaseSettingsCas": "passed"
+  },
+  "messagingTypecheck": "passed",
+  "nativeI18nEntries": 4406,
+  "iosSimulatorBuild": "passed",
+  "proofFreshness": "All media was captured on 2026-08-31 from the exact stacked child head."
+}
